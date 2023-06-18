@@ -1,0 +1,20 @@
+.heroLeft {
+    margin: 150px 0 150px 80px;
+}
+
+.hero_h2 {
+    font-weight: 700;
+    font-size: 44px;
+    word-spacing: -5px;
+    color: #000000;
+}
+
+.hero_p {
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 27px;
+}
+
+.heroImg {
+    width: 482px;
+}
