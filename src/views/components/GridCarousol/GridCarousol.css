@@ -1,29 +1,21 @@
-.carouselImage {
-  width: 260px;
-}
-
-
-.card-title {
-  color: #db0075;
-}
-
-.card-text {
-  color: #17E6E6;
-}
-
-.list-inline-item {
-  color: #ffd700
-}
-
-.price {
-  color: #9B1B30;
-}
-
-.btn-pink {
-  background-color: #fcb2b2 !important;
-}
-
-.carousel-inner .carousel-item-end,
-.carousel-inner .carousel-item-start {
-  transform: translateX(0);
-}
+ .carButton [data-bs-target] {
+   /* box-sizing: content-box;
+  flex: 0 1 auto; */
+   width: 20px !important;
+   height: 20px !important;
+   border-radius: 50%;
+   margin-bottom: -45px;
+   /* padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+  */
+ }
