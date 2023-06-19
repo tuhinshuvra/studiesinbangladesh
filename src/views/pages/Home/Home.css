@@ -1,0 +1,9 @@
+.vectorBg {
+    background-image: url(../../../assets/vector_image.png);
+    height: 1000px;
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    background-position: left;
+    /* background-position: 50% 0%; */
+    background-position: left;
+}

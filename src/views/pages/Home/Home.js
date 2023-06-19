@@ -6,13 +6,16 @@ import HomePageUpcommingEventsSection from './HomePageUpcommingEventsSection/Hom
 import HomePageCountriesSection from './HomePageCountriesSection/HomePageCountriesSection';
 import HomePageTestimonialSection from './HomePageTestimonialSection/HomePageTestimonialSection';
 import HomePageApplyNowSection from './HomePageApplyNowSection/HomePageApplyNowSection';
+import './Home.css'
 
 const Home = () => {
     return (
         <div>
-            <HomePageHeroSection></HomePageHeroSection>
-            <HomePageFeaturedUniversities></HomePageFeaturedUniversities>
-            <HomePageServicesSection></HomePageServicesSection>
+            <div className='vectorBg'>
+                <HomePageHeroSection></HomePageHeroSection>
+                <HomePageFeaturedUniversities></HomePageFeaturedUniversities>
+                <HomePageServicesSection></HomePageServicesSection>
+            </div>
             <HomePageUpcommingEventsSection></HomePageUpcommingEventsSection>
             <HomePageCountriesSection></HomePageCountriesSection>
             <HomePageTestimonialSection></HomePageTestimonialSection>
