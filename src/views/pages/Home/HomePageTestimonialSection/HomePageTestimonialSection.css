@@ -1,0 +1,39 @@
+.testimonialArea {
+    margin: 150px 0;
+}
+
+.testimonialImage {
+    width: 500px;
+}
+
+.testimonialCardOne {
+    width: 579px;
+    background: rgba(147, 129, 129, 0.16);
+    border: 1px solid #6C066E;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 44px;
+}
+
+.testimonialCardTwo {
+    width: 700px;
+    margin-top: 150px;
+    background: rgba(147, 129, 129, 0.16);
+    border: 1px solid #6C066E;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 44px;
+}
+
+.testiCardTitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    color: #6C066E;
+
+
+}
+
+.testiCardSubTitle {
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 28px;
+}
