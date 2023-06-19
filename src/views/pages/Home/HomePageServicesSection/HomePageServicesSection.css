@@ -1,0 +1,52 @@
+.servicesSection {
+    margin: 100px 0;
+}
+
+.servicesSub {
+    font-weight: 500;
+    font-size: 27px;
+    word-spacing: 5px;
+}
+
+.serviceCard {
+    background-color: white;
+    width: 370px;
+    height: 350px;
+    border-radius: 44px;
+    border: 1px solid #6C066E;
+}
+
+.cardOne,
+.cardThree {
+    z-index: -1;
+}
+
+.cardTwo {
+    z-index: 1;
+}
+
+.cardHead {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 47px;
+
+    color: #6C066E;
+
+}
+
+.cardSub {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.learnMore {
+    font-size: 18px;
+    color: rgba(108, 6, 110, 0.7);
+}
+
+.serviceArrow {
+    color: rgba(108, 6, 110, 0.7);
+    width: 30px;
+    height: 30px;
+}
