@@ -16,10 +16,10 @@ const Home = () => {
                 <HomePageFeaturedUniversities></HomePageFeaturedUniversities>
                 <HomePageServicesSection></HomePageServicesSection>
             </div>
-            {/* <HomePageUpcommingEventsSection></HomePageUpcommingEventsSection>
+            <HomePageUpcommingEventsSection></HomePageUpcommingEventsSection>
             <HomePageCountriesSection></HomePageCountriesSection>
             <HomePageTestimonialSection></HomePageTestimonialSection>
-            <HomePageApplyNowSection></HomePageApplyNowSection> */}
+            <HomePageApplyNowSection></HomePageApplyNowSection>
         </div>
     );
 };

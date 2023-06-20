@@ -1,6 +1,5 @@
 .contriesCarousol {
   width: 397px;
-
   border: 1px solid #6C066E;
   border-radius: 20px;
 }
@@ -34,4 +33,32 @@
   height: 20px !important;
   border-radius: 50%;
   margin-bottom: -45px;
+}
+
+
+
+/* media query */
+@media (min-width: 1440px) and (max-width: 2559.98px) {}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+  .contriesCarousol {
+    width: 300px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .contriesCarousol {
+    width: 225px;
+  }
+}
+
+@media (min-width: 425px) and (max-width: 767.98px) {}
+
+@media (min-width: 320px) and (max-width: 424.98px) {
+  .contriesCarousol {
+    width: 274px;
+    margin: 0px 14%;
+  }
 }

@@ -10,7 +10,7 @@ const CountriesGridCarousolItem = ({ titleOne, titleTwo, titleThree, subTitleOne
                     <div className="contriesCarousol" >
                         <div className="card-body">
                             <div className=''>
-                                <img src={imageOne} className='contryImage' alt="" />
+                                <img src={imageOne} className=' img-fluid' alt="" />
                             </div>
                             <h4 className="commonSubHead text-center text-primary ms-2">{titleOne}</h4>
                             <p className="card-text subTitle my-3">{subTitleOne}</p>
@@ -19,12 +19,12 @@ const CountriesGridCarousolItem = ({ titleOne, titleTwo, titleThree, subTitleOne
                 </div>
             </div>
 
-            <div className="col-md-4" data-aos="flip-right">
+            <div className="col-md-4 d-none  d-md-block" data-aos="flip-right">
                 <div className="card  border-0" >
                     <div className="contriesCarousol" >
                         <div className="card-body">
                             <div className=''>
-                                <img src={imageTwo} className='contryImage' alt="" />
+                                <img src={imageTwo} className='img-fluid' alt="" />
                             </div>
                             <h4 className="commonSubHead text-center text-primary ms-2">{titleTwo}</h4>
                             <p className="card-text subTitle my-3">{subTitleTwo}</p>
@@ -33,12 +33,12 @@ const CountriesGridCarousolItem = ({ titleOne, titleTwo, titleThree, subTitleOne
                 </div>
             </div>
 
-            <div className="col-md-4" data-aos="flip-left">
+            <div className="col-md-4 d-none  d-md-block" data-aos="flip-left">
                 <div className="card  border-0" >
                     <div className="contriesCarousol" >
                         <div className="card-body">
                             <div className=''>
-                                <img src={imageThree} className='contryImage' alt="" />
+                                <img src={imageThree} className='img-fluid' alt="" />
                             </div>
                             <h4 className="commonSubHead text-center text-primary ms-2">{titleThree}</h4>
                             <p className="card-text subTitle my-3">{subTitleThree}</p>

@@ -76,7 +76,7 @@ code {
 
 @media (min-width: 768px) and (max-width: 991.98px) {
   .commonSubHead {
-    font-size: 19px;
+    font-size: 15px;
   }
 }
 
@@ -84,11 +84,20 @@ code {
   .common_Heading {
     font-size: 33px;
   }
+
+  .commonSubHead {
+    font-size: 21px;
+  }
+
 }
 
 @media (min-width: 320px) and (max-width: 424.98px) {
   .common_Heading {
     font-size: 33px;
+  }
+
+  .commonSubHead {
+    font-size: 21px;
   }
 }
 

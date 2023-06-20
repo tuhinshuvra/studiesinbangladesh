@@ -4,8 +4,8 @@ import imageOne from '../../../../assets/countryImage/canada.png'
 import imageTwo from '../../../../assets/countryImage/australia.png'
 import imageThree from '../../../../assets/countryImage/united-kingdom.png'
 import imageFour from '../../../../assets/countryImage/australia.png'
-import imageFive from '../../../../assets/countryImage/united-kingdom.png'
-import imageSix from '../../../../assets/countryImage/canada.png'
+import imageFive from '../../../../assets/countryImage/canada.png'
+import imageSix from '../../../../assets/countryImage/united-kingdom.png'
 import './CountriesGridCarousol.css';
 
 const CountriesGridCarousol = () => {
@@ -34,7 +34,7 @@ const CountriesGridCarousol = () => {
 
 							imageThree={imageThree}
 							titleThree="Study in United Kingdom"
-							subTitleThree="Study in the United Kingdom and integrate into the society as a professional and start your life "
+							subTitleThree="Study in the UK and integrate into the society as a professional and start your life "
 
 						></CountriesGridCarousolItem>
 					</div>
@@ -50,12 +50,12 @@ const CountriesGridCarousol = () => {
 
 							imageThree={imageSix}
 							titleThree="Study in Japan"
-							subTitleThree="Study in the United Kingdom and integrate into the society as a professional and start your life "
+							subTitleThree="Study in the Japan and integrate into the society as a professional and start your life "
 						></CountriesGridCarousolItem>
 					</div>
 					<div className="carousel-item" data-bs-interval="2000">
 						<CountriesGridCarousolItem
-							imageOne={imageOne}
+							imageOne={imageThree}
 							titleOne="Study in Canada"
 							subTitleOne="Study in the Canada and integrate into the society as a professional and start your life"
 
@@ -63,9 +63,9 @@ const CountriesGridCarousol = () => {
 							titleTwo="Study in Jermany"
 							subTitleTwo="Study in the Austrelia and integrate into the society as a professional and start your life "
 
-							imageThree={imageThree}
+							imageThree={imageFour}
 							titleThree="Study in United Kingdom"
-							subTitleThree="Study in the United Kingdom and integrate into the society as a professional and start your life "
+							subTitleThree="Study in the UK and integrate into the society as a professional and start your life "
 						></CountriesGridCarousolItem>
 					</div>
 					<div className="carousel-item" data-bs-interval="2000">
@@ -80,7 +80,7 @@ const CountriesGridCarousol = () => {
 
 							imageThree={imageSix}
 							titleThree="Study in USA"
-							subTitleThree="Study in the United Kingdom and integrate into the society as a professional and start your life "
+							subTitleThree="Study in the USA and integrate into the society as a professional and start your life "
 						></CountriesGridCarousolItem>
 					</div>
 

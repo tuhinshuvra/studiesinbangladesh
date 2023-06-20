@@ -3,7 +3,7 @@
 }
 
 .testimonialImage {
-    width: 500px;
+    /* width: 500px; */
 }
 
 .testimonialCardOne {
@@ -36,4 +36,87 @@
     font-weight: 500;
     font-size: 25px;
     line-height: 28px;
+}
+
+/* media query */
+@media (min-width: 1440px) and (max-width: 2559.98px) {}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+    .testimonialCardOne {
+        width: 430px;
+    }
+
+    .testimonialCardTwo {
+        width: 450px;
+        margin-top: 40px;
+    }
+
+
+    .testiCardSubTitle {
+        font-size: 20px;
+    }
+
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .testimonialCardOne {
+        width: 320px;
+    }
+
+    .testimonialCardTwo {
+        width: 390px;
+        margin-top: 40px;
+    }
+
+
+    .testiCardSubTitle {
+        font-size: 19px;
+    }
+
+}
+
+@media (min-width: 425px) and (max-width: 767.98px) {
+    .testimonialArea {
+        margin: 50px 0;
+    }
+
+    .testimonialCardOne {
+        width: 366px;
+        margin-top: 30px;
+    }
+
+    .testimonialCardTwo {
+        width: 390px;
+        margin-top: 40px;
+    }
+
+
+    .testiCardSubTitle {
+        font-size: 19px;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 424.98px) {
+    .testimonialArea {
+        margin: 50px 0;
+    }
+
+    .testimonialCardOne {
+        width: 335px;
+        margin-top: 30px;
+    }
+
+    .testimonialCardTwo {
+        width: 355px;
+        margin-top: 40px;
+    }
+
+
+    .testiCardSubTitle {
+        font-size: 19px;
+    }
+
 }
