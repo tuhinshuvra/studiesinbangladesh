@@ -5,7 +5,7 @@ import './EventsGridCarousol.css';
 
 const EventsGridCarousolItem = ({ titleOne, titleTwo, subTitleOne, subTitleTwo, imageOne, imageTwo }) => {
     return (
-        <div className=" d-flex gap-3">
+        <div className=" d-flex gap-3 mb-md-5 mb-3">
 
             <div className=" col-6 " data-aos="flip-left">
                 <div className="card  border-0" >
@@ -13,7 +13,7 @@ const EventsGridCarousolItem = ({ titleOne, titleTwo, subTitleOne, subTitleTwo, 
                         <div className="card-body mt-3 p-5">
                             <div className=' d-flex'>
                                 <img src={imageOne} className='eventLogo' alt="" />
-                                <h4 className="text-center cardTitle ms-2">{titleOne}</h4>
+                                <h4 className="commonSubHead text-primary text-center  ms-2">{titleOne}</h4>
                             </div>
                             <p className="card-text cardSubTitle my-3">{subTitleOne}</p>
 
@@ -32,7 +32,7 @@ const EventsGridCarousolItem = ({ titleOne, titleTwo, subTitleOne, subTitleTwo, 
                         <div className="card-body mt-3 p-5">
                             <div className=' d-flex'>
                                 <img src={imageTwo} className='eventLogo' alt="" />
-                                <h4 className="text-center cardTitle ms-2">{titleTwo}</h4>
+                                <h4 className="commonSubHead text-primary text-center  ms-2">{titleTwo}</h4>
                             </div>
                             <p className="card-text cardSubTitle my-3">{subTitleTwo}</p>
 

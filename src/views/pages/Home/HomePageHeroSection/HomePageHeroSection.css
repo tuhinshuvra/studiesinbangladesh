@@ -1,5 +1,5 @@
 .heroLeft {
-    margin: 150px 0 150px 80px;
+    margin: 150px 0px 0px 0px;
 }
 
 .hero_h2 {
@@ -7,6 +7,11 @@
     font-size: 44px;
     word-spacing: -5px;
     color: #000000;
+}
+
+.heroTitle {
+    font-weight: 700;
+    font-size: 45px;
 }
 
 .hero_p {
@@ -17,4 +22,69 @@
 
 .heroImg {
     width: 482px;
+}
+
+
+
+@media (min-width: 1440px) and (max-width: 2559.98px) {}
+
+@media (min-width: 1024px) and (max-width: 1199.98px) {
+    .heroImg {
+        width: 400px;
+    }
+
+    .heroTitle {
+        font-weight: 700;
+        font-size: 32px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1023.98px) {}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .heroImg {
+        width: 321px;
+    }
+
+    .heroTitle {
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    .hero_p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+}
+
+@media (min-width: 425px) and (max-width: 767.98px) {
+    .heroLeft {
+        margin: 50px 0px 0px 0px;
+    }
+
+    .heroTitle {
+        font-weight: 700;
+        font-size: 26px;
+    }
+
+    .hero_p {
+        font-size: 17px;
+        line-height: 27px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 424.98px) {
+    .heroLeft {
+        margin: 50px 0px 0px 0px;
+    }
+
+    .heroTitle {
+        font-weight: 700;
+        font-size: 25px;
+    }
+
+    .hero_p {
+        font-size: 17px;
+        line-height: 27px;
+    }
 }

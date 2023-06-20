@@ -3,7 +3,7 @@ import './GridCarousolItem.css';
 
 const GridCarousolItem = ({ imgOne, imgTwo, imgThree }) => {
     return (
-        <div className="row">
+        <div className="row mb-md-5 mb-3">
 
             <div className=" col-md-4  col-sm-6" data-aos="flip-left">
                 {/* <div className="card mb-2 mx-md-0 mx-2"> */}

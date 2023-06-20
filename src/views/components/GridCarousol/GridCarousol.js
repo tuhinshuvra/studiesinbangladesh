@@ -19,7 +19,7 @@ const GridCarousol = () => {
 		<div className=' col-md-12 mx-auto '>
 			{/* ########################## domestic locations flights ################################ */}
 
-			<div id="featureUniversities" className="carousel  carousel-dark slide">
+			<div id="featureUniversities" className="carousel  carousel-dark carColor slide">
 				<div className="carousel-indicators carButton">
 					<button type="button" data-bs-target="#featureUniversities" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#featureUniversities" data-bs-slide-to="1" aria-label="Slide 2"></button>

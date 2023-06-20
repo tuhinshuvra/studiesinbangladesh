@@ -14,8 +14,8 @@ const EventsGridCarousol = () => {
 		<div className=' mx-auto '>
 			{/* ########################## domestic locations flights ################################ */}
 
-			<div id="eventsGridCarousol" className="carousel  carousel-dark slide">
-				<div className="carousel-indicators eventCarButton">
+			<div id="eventsGridCarousol" className="carousel  carousel-dark carColor slide">
+				<div className="carousel-indicators carButton">
 					<button type="button" data-bs-target="#eventsGridCarousol" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#eventsGridCarousol" data-bs-slide-to="1" aria-label="Slide 2"></button>
 					<button type="button" data-bs-target="#eventsGridCarousol" data-bs-slide-to="2" aria-label="Slide 3"></button>
@@ -39,7 +39,7 @@ const EventsGridCarousol = () => {
 					<div className="carousel-item" data-bs-interval="2000">
 						<EventsGridCarousolItem
 							imageOne={imageThree}
-							titleOne="The University of Western Australia"
+							titleOne="The University of Central England"
 							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
  							of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
 
@@ -52,7 +52,7 @@ const EventsGridCarousol = () => {
 					<div className="carousel-item" data-bs-interval="2000">
 						<EventsGridCarousolItem
 							imageOne={imageFive}
-							titleOne="The University of Western Australia"
+							titleOne="Maritime College of Australia"
 							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
  								of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
 
@@ -65,7 +65,7 @@ const EventsGridCarousol = () => {
 					<div className="carousel-item" data-bs-interval="2000">
 						<EventsGridCarousolItem
 							imageOne={imageThree}
-							titleOne="The University of Western Australia"
+							titleOne="The University of Estern Australia"
 							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
  								of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
 
