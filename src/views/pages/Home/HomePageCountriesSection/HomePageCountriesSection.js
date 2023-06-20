@@ -1,6 +1,6 @@
 import React from 'react';
-import './HomePageCountriesSection.css';
 import CountriesGridCarousol from './CountriesGridCarousol';
+import './HomePageCountriesSection.css';
 
 const HomePageCountriesSection = () => {
     return (

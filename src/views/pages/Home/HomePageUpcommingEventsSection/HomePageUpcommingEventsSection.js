@@ -1,10 +1,10 @@
 import React from 'react';
-import './HomePageUpcommingEventsSection.css';
 import EventsGridCarousol from './EventsGridCarousol';
+import './HomePageUpcommingEventsSection.css';
 
 const HomePageUpcommingEventsSection = () => {
     return (
-        <div>
+        <div className='eventsArea'>
             <h2 className=' text-center featured_Head  '>Upcoming University Events</h2>
             <div className='col-md-9 mx-auto my-5'>
                 <p className='servicesSub'>

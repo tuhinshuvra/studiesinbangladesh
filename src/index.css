@@ -20,6 +20,7 @@ code {
   width: 130px;
   height: 40px;
   border: none;
+  font-weight: bold;
   background: #6C066F;
   border-radius: 10px;
   color: white;

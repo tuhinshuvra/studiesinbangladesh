@@ -9,9 +9,9 @@ const HomePageTestimonialSection = () => {
                 <img className='testimonialImage' src={TestimonialImage} alt="" />
             </div>
             <div className='col-md-7 tesimonialTextArea'>
-                <div className="testimonialCardOne p-5 mx-auto">
-                    <h3 className='testiCardTitle text-center'>Testimonials</h3>
-                    <p className='testiCardSubTitle text-center'>Please check the testimonials from our satisfied clients to confirm.</p>
+                <div className="testimonialCardOne p-4 mx-auto">
+                    <h3 className='testiCardTitle text-center my-4'>Testimonials</h3>
+                    <p className='testiCardSubTitle'>Please check the testimonials from our satisfied clients to confirm.</p>
                 </div>
 
                 <div className="testimonialCardTwo p-5 mx-auto">

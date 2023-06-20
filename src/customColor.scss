@@ -1,0 +1,14 @@
+//overwrite the theme variables
+$primary : #6C066F;
+$secondary: rgb(166, 164, 164);
+$success: rgb(4, 82, 4);
+$info: rgb(79, 26, 214);
+$warning: rgb(247, 81, 109);
+$danger: red;
+$light: rgb(231, 227, 227);
+$dark: black;
+
+//imports bootstrap styles at the bottom
+@import '~bootstrap/scss/bootstrap.scss';
+// @import  '../node_modules/bootstrap/scss/bootstrap.scss';
+// @import url('../node_modules/bootstrap/scss/bootstrap.scss');

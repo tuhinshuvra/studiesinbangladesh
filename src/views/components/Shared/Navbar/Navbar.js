@@ -8,7 +8,7 @@ const Navbar = () => {
         <div className='navBg'>
             <nav className="navbar navbar-expand-lg navBg ">
                 <div className="container-fluid col-md-11 mx-auto">
-                    <Link to="/" className="navbar-brand" href="#">
+                    <Link to="/" className="navbar-brand">
                         <img className='navLogo' src={navLogo} alt="" />
                     </Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -17,19 +17,21 @@ const Navbar = () => {
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
                             <li className="nav-item">
-                                <Link className="nav-link " aria-current="page" href="#">About Us</Link>
+                                <Link className="nav-link " aria-current="page" to="/about">About Us</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link mx-3" href="#">Services</Link>
+                                <Link className="nav-link mx-3" to="/services">Services</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link mx-3" href="#">Testimonials</Link>
+                                <Link className="nav-link mx-3" to="/testimonial">Testimonials</Link>
                             </li>
 
                             <li>
-                                <button className=' applyBtn '>Apply</button>
+                                <Link to="/apply">
+                                    <button className='applyBtn'>Apply</button>
+                                </Link>
                             </li>
                         </ul>
                     </div>
