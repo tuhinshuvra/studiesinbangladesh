@@ -18,7 +18,7 @@ const EventsGridCarousolItem = ({ titleOne, titleTwo, subTitleOne, subTitleTwo, 
                             <p className="card-text cardSubTitle my-3 text-lg-start text-center">{subTitleOne}</p>
 
                             <div className='  mt-5'>
-                                <Link href="#" className=" text-decoration-none fw-bold learnMore ">Learn More </Link>
+                                <Link to="/" className=" text-decoration-none fw-bold learnMore ">Learn More </Link>
                                 <FaArrowCircleRight className='serviceArrow ms-2' />
                             </div>
                         </div>
@@ -37,7 +37,7 @@ const EventsGridCarousolItem = ({ titleOne, titleTwo, subTitleOne, subTitleTwo, 
                             <p className="card-text cardSubTitle my-3 text-lg-start text-center">{subTitleTwo}</p>
 
                             <div className=' mt-5'>
-                                <Link href="#" className=" text-decoration-none fw-bold learnMore ">Learn More </Link>
+                                <Link to="/" className=" text-decoration-none fw-bold learnMore ">Learn More </Link>
                                 <FaArrowCircleRight className='serviceArrow ms-2' />
                             </div>
                         </div>

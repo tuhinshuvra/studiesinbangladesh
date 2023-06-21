@@ -1,5 +1,5 @@
 .testimonialArea {
-    margin: 150px 0;
+    margin: 0 0 150px;
 }
 
 .testimonialImage {
@@ -7,7 +7,7 @@
 }
 
 .testimonialCardOne {
-    width: 500px;
+    width: 437px;
     background: rgba(147, 129, 129, 0.16);
     border: 1px solid #6C066E;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
@@ -61,12 +61,17 @@
 @media (min-width: 992px) and (max-width: 1023.98px) {}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .testimonialArea {
+        margin: 50px 0;
+    }
+
+
     .testimonialCardOne {
-        width: 320px;
+        width: 280px;
     }
 
     .testimonialCardTwo {
-        width: 390px;
+        width: 330px;
         margin-top: 40px;
     }
 

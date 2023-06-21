@@ -1,3 +1,24 @@
+.bg1 {
+    background-image: url(../../../../assets/threeBar.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    margin-top: 100px;
+}
+
+.bg2 {
+    background-image: url(../../../../assets/threeBar2.png);
+    background-repeat: no-repeat;
+    /* background-position: 10% 10%; */
+    margin-top: 100px;
+}
+
+.heroArea {
+    /* background-image: url(../../../../assets/threeBar.png);
+    background-repeat: no-repeat;
+    background-position: 0% 0%;
+    margin-top: 100px; */
+}
+
 .heroLeft {
     margin: 150px 0px 0px 0px;
 }
@@ -15,13 +36,13 @@
 }
 
 .hero_p {
-    font-weight: 600;
+    font-weight: 700;
     font-size: 21px;
     line-height: 27px;
 }
 
 .heroImg {
-    width: 482px;
+    width: 600px;
 }
 
 

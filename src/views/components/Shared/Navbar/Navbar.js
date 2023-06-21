@@ -6,8 +6,8 @@ import './Navbar.css';
 const Navbar = () => {
     return (
         <div className='navBg'>
-            <nav className="navbar navbar-expand-lg navBg ">
-                <div className="container-fluid col-md-11 mx-auto">
+            <nav className="navbar navbar-expand-lg   ">
+                <div className="container-fluid col-md-10 mx-auto">
                     <Link to="/" className="navbar-brand">
                         <img className='navLogo' src={navLogo} alt="" />
                     </Link>
