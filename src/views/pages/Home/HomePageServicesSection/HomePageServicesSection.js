@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { FaArrowCircleRight } from 'react-icons/fa';
-import './HomePageServicesSection.css';
 import HomePageServiceSectionModalsData from './HomePageServiceSectionModalsData';
+import './HomePageServicesSection.css';
 
 const HomePageServicesSection = () => {
     return (
