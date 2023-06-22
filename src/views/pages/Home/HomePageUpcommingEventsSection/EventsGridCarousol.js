@@ -1,20 +1,19 @@
 import React from 'react';
 import EventsGridCarousolItem from './EventsGridCarousolItem';
-import imageOne from '../../../../assets/roundLogo/bangladeshMedical.png'
-import imageTwo from '../../../../assets/roundLogo/chitagongMedical.png'
-import imageThree from '../../../../assets/roundLogo/dhakaMedicalCollege.png'
-import imageFour from '../../../../assets/roundLogo/dhakanationalMedical.png'
-import imageFive from '../../../../assets/roundLogo/popular.png'
-import imageSix from '../../../../assets/roundLogo/rangamatiMedical.jpg'
+import imageOne from '../../../../assets/mediclaCollegeLogo/rajshahiMedicalCollege.png'
+import imageTwo from '../../../../assets/mediclaCollegeLogo/armdForceMedicalCollege.jpg'
+import imageThree from '../../../../assets/mediclaCollegeLogo/bangladeshMedicalCollege.png'
+import imageFour from '../../../../assets/mediclaCollegeLogo/enamMedicalCollege.png'
+import imageFive from '../../../../assets/mediclaCollegeLogo/greenLifeCollege.png'
+import imageSix from '../../../../assets/mediclaCollegeLogo/shahidSuhrawardyMedicalCollege.png'
 import './EventsGridCarousol.css';
 
 const EventsGridCarousol = () => {
-	// fareOne, fareTwo, fareThree, fareFive
 	return (
 		<div className=' mx-auto '>
-			{/* ########################## domestic locations flights ################################ */}
 
-			<div id="eventsGridCarousol" className="carousel  carousel-dark carColor slide">
+			<div id="eventsGridCarousol" className="carousel  carousel-dark carColor slide" data-bs-ride="carousel">
+
 				<div className="carousel-indicators carButton">
 					<button type="button" data-bs-target="#eventsGridCarousol" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#eventsGridCarousol" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -22,55 +21,55 @@ const EventsGridCarousol = () => {
 					<button type="button" data-bs-target="#eventsGridCarousol" data-bs-slide-to="3" aria-label="Slide 4"></button>
 				</div>
 				<div className="carousel-inner">
-					<div className="carousel-item active" data-bs-interval="2000">
+					<div className="carousel-item active" data-bs-interval="4000">
 						<EventsGridCarousolItem
 							imageOne={imageOne}
-							titleOne="The University of Western Australia"
+							dateMonth="eventsDate"
 							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
 							 of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
 
 							imageTwo={imageTwo}
-							titleTwo="Monash University "
+							dateMonth2="eventsDate"
 							subTitleTwo="This event will cover the administrative life cycle of the students increased in the Monash University. 
 							This is a 4 hour event with a separate Q&A session after the end of the event. "
 
 						></EventsGridCarousolItem>
 					</div>
-					<div className="carousel-item" data-bs-interval="2000">
+					<div className="carousel-item" data-bs-interval="4000">
 						<EventsGridCarousolItem
 							imageOne={imageThree}
-							titleOne="The University of Central England"
+							dateMonth="eventsDate"
 							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
  							of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
 
 							imageTwo={imageFour}
-							titleTwo="Monash University "
+							dateMonth2="eventsDate"
 							subTitleTwo="This event will cover the administrative life cycle of the students increased in the Monash University. 
 								This is a 4 hour event with a separate Q&A session after the end of the event. "
 						></EventsGridCarousolItem>
 					</div>
-					<div className="carousel-item" data-bs-interval="2000">
+					<div className="carousel-item" data-bs-interval="4000">
 						<EventsGridCarousolItem
 							imageOne={imageFive}
-							titleOne="Maritime College of Australia"
+							dateMonth="eventsDate"
 							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
  								of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
 
 							imageTwo={imageFour}
-							titleTwo="Monash University "
+							dateMonth2="eventsDate"
 							subTitleTwo="This event will cover the administrative life cycle of the students increased in the Monash University. 
 								This is a 4 hour event with a separate Q&A session after the end of the event."
 						></EventsGridCarousolItem>
 					</div>
-					<div className="carousel-item" data-bs-interval="2000">
+					<div className="carousel-item" data-bs-interval="4000">
 						<EventsGridCarousolItem
 							imageOne={imageThree}
-							titleOne="The University of Estern Australia"
+							dateMonth="eventsDate"
 							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
  								of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
 
 							imageTwo={imageFive}
-							titleTwo="Monash University "
+							dateMonth2="eventsDate"
 							subTitleTwo="This event will cover the administrative life cycle of the students increased in the Monash University. 
 									This is a 4 hour event with a separate Q&A session after the end of the event. "
 						></EventsGridCarousolItem>

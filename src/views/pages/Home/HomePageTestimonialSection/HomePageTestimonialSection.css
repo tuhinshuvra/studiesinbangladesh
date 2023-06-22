@@ -1,3 +1,15 @@
+.bar1 {
+    background-image: url(../../../../assets/threeBar.png);
+    background-repeat: no-repeat;
+    background-position: 5% 6%;
+}
+
+.bar2 {
+    background-image: url(../../../../assets/threeBar2.png);
+    background-repeat: no-repeat;
+    background-position: 47% 98%;
+}
+
 .testimonialArea {
     margin: 0 0 150px;
 }
@@ -42,6 +54,18 @@
 @media (min-width: 1440px) and (max-width: 2559.98px) {}
 
 @media (min-width: 1024px) and (max-width: 1199.98px) {
+    .bar1 {
+        background-position: 7% 15%;
+        background-size: 100px;
+    }
+
+    .bar2 {
+        background-position: 47% 99%;
+        background-size: 100px;
+    }
+
+
+
     .testimonialCardOne {
         width: 430px;
     }
@@ -61,8 +85,21 @@
 @media (min-width: 992px) and (max-width: 1023.98px) {}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .bar1 {
+        background-position: 4% 25%;
+        background-size: 80px;
+    }
+
+    .bar2 {
+        background-position: 57% 100%;
+        background-size: 80px;
+    }
+
+
     .testimonialArea {
         margin: 50px 0;
+
     }
 
 
@@ -83,6 +120,14 @@
 }
 
 @media (min-width: 425px) and (max-width: 767.98px) {
+    .bar1 {
+        background-image: none !important;
+    }
+
+    .bar2 {
+        background-image: none !important;
+    }
+
     .testimonialArea {
         margin: 50px 0;
     }
@@ -105,6 +150,14 @@
 }
 
 @media (min-width: 320px) and (max-width: 424.98px) {
+    .bar1 {
+        background-image: none !important;
+    }
+
+    .bar2 {
+        background-image: none !important;
+    }
+
     .testimonialArea {
         margin: 50px 0;
     }

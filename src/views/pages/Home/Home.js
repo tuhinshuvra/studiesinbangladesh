@@ -5,7 +5,7 @@ import HomePageServicesSection from './HomePageServicesSection/HomePageServicesS
 import HomePageUpcommingEventsSection from './HomePageUpcommingEventsSection/HomePageUpcommingEventsSection';
 import HomePageCountriesSection from './HomePageCountriesSection/HomePageCountriesSection';
 import HomePageTestimonialSection from './HomePageTestimonialSection/HomePageTestimonialSection';
-import HomePageApplyNowSection from './HomePageApplyNowSection/HomePageApplyNowSection';
+import HomePageSubscription from './HomePageSubscription/HomePageSubscription';
 import './Home.css'
 
 const Home = () => {
@@ -19,7 +19,7 @@ const Home = () => {
             <HomePageUpcommingEventsSection></HomePageUpcommingEventsSection>
             <HomePageCountriesSection></HomePageCountriesSection>
             <HomePageTestimonialSection></HomePageTestimonialSection>
-            <HomePageApplyNowSection></HomePageApplyNowSection>
+            <HomePageSubscription></HomePageSubscription>
         </div>
     );
 };

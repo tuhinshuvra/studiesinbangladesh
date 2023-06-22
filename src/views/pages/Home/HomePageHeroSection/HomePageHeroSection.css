@@ -1,15 +1,16 @@
 .bg1 {
     background-image: url(../../../../assets/threeBar.png);
     background-repeat: no-repeat;
-    background-position: 0% 0%;
+    background-position: 5% -1%;
     margin-top: 100px;
+    background-size: 115px;
 }
 
 .bg2 {
     background-image: url(../../../../assets/threeBar2.png);
     background-repeat: no-repeat;
-    /* background-position: 10% 10%; */
-    margin-top: 100px;
+    background-position: 40% 55%;
+    background-size: 115px;
 }
 
 .heroArea {
@@ -50,6 +51,19 @@
 @media (min-width: 1440px) and (max-width: 2559.98px) {}
 
 @media (min-width: 1024px) and (max-width: 1199.98px) {
+
+
+    .bg1 {
+        background-size: 90px;
+    }
+
+    .bg2 {
+        background-size: 90px;
+        background-position: 45% 77%;
+    }
+
+
+
     .heroImg {
         width: 400px;
     }
@@ -63,6 +77,23 @@
 @media (min-width: 992px) and (max-width: 1023.98px) {}
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+    .bg1 {
+        background-image: url(../../../../assets/threeBar.png);
+        background-repeat: no-repeat;
+        background-position: 0% 0%;
+        background-size: 100px;
+
+    }
+
+    .bg2 {
+        background-image: url(../../../../assets/threeBar2.png);
+        background-repeat: no-repeat;
+        background-position: 40% 80%;
+        background-size: 100px;
+
+    }
+
+
     .heroImg {
         width: 321px;
     }
@@ -79,6 +110,16 @@
 }
 
 @media (min-width: 425px) and (max-width: 767.98px) {
+
+    .bg1 {
+        background-image: none;
+    }
+
+    .bg2 {
+        background-image: none;
+    }
+
+
     .heroLeft {
         margin: 50px 0px 0px 0px;
     }
@@ -95,6 +136,16 @@
 }
 
 @media (min-width: 320px) and (max-width: 424.98px) {
+
+    .bg1 {
+        background-image: none;
+    }
+
+    .bg2 {
+        background-image: none;
+    }
+
+
     .heroLeft {
         margin: 50px 0px 0px 0px;
     }

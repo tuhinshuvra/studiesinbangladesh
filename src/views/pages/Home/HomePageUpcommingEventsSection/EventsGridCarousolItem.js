@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { FaArrowCircleRight } from 'react-icons/fa';
 import './EventsGridCarousol.css';
 
-const EventsGridCarousolItem = ({ titleOne, titleTwo, subTitleOne, subTitleTwo, imageOne, imageTwo }) => {
+const EventsGridCarousolItem = ({ dateMonth, dateMonth2, subTitleOne, subTitleTwo, imageOne, imageTwo }) => {
     return (
         <div className=" d-flex gap-3 mb-md-5 mb-3">
 
@@ -12,8 +12,11 @@ const EventsGridCarousolItem = ({ titleOne, titleTwo, subTitleOne, subTitleTwo, 
                     <div className="eventsCarousol shadow-sm" >
                         <div className="card-body mt-3 p-xl-5 p-lg-3 p-2">
                             <div className=' d-flex'>
-                                <img src={imageOne} className='eventLogo' alt="" />
-                                <h4 className="commonSubHead text-primary text-center  ms-2">{titleOne}</h4>
+                                <div className='dateMonth text-center p-1'>
+                                    <h3 className=' fw-bold my-0'>23</h3>
+                                    <p className=' fw-bold my-0'>October</p>
+                                </div>
+                                <img src={imageOne} className='eventLogo ms-3' alt="" />
                             </div>
                             <p className="card-text cardSubTitle my-3 text-lg-start text-center">{subTitleOne}</p>
 
@@ -31,8 +34,11 @@ const EventsGridCarousolItem = ({ titleOne, titleTwo, subTitleOne, subTitleTwo, 
                     <div className="eventsCarousol shadow-sm" >
                         <div className="card-body mt-3 p-xl-5 p-lg-3 p-2">
                             <div className=' d-flex'>
-                                <img src={imageTwo} className='eventLogo' alt="" />
-                                <h4 className="commonSubHead text-primary text-center  ms-2">{titleTwo}</h4>
+                                <div className='dateMonth text-center p-1'>
+                                    <h3 className='fw-bold my-0'>17</h3>
+                                    <p className='fw-bold my-0'>January</p>
+                                </div>
+                                <img src={imageTwo} className='eventLogo ms-3' alt="" />
                             </div>
                             <p className="card-text cardSubTitle my-3 text-lg-start text-center">{subTitleTwo}</p>
 

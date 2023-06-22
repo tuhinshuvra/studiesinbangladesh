@@ -14,7 +14,7 @@ const CountriesGridCarousol = () => {
 		<div className=' mx-auto '>
 			{/* ########################## domestic locations flights ################################ */}
 
-			<div id="contriesGridCarousol" className="carousel carColor slide">
+			<div id="contriesGridCarousol" className="carousel carColor slide" data-bs-ride="carousel">
 				<div className="carousel-indicators carButton">
 					<button type="button" data-bs-target="#contriesGridCarousol" data-bs-slide-to="0" className="active" aria-current="true" aria-label="Slide 1"></button>
 					<button type="button" data-bs-target="#contriesGridCarousol" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -22,7 +22,7 @@ const CountriesGridCarousol = () => {
 					<button type="button" data-bs-target="#contriesGridCarousol" data-bs-slide-to="3" aria-label="Slide 4"></button>
 				</div>
 				<div className="carousel-inner">
-					<div className="carousel-item active" data-bs-interval="2000">
+					<div className="carousel-item active" data-bs-interval="4000">
 						<CountriesGridCarousolItem
 							imageOne={imageOne}
 							titleOne="Study in Canada"
@@ -38,7 +38,7 @@ const CountriesGridCarousol = () => {
 
 						></CountriesGridCarousolItem>
 					</div>
-					<div className="carousel-item" data-bs-interval="2000">
+					<div className="carousel-item" data-bs-interval="4000">
 						<CountriesGridCarousolItem
 							imageOne={imageFour}
 							titleOne="Study in USA"
@@ -53,7 +53,7 @@ const CountriesGridCarousol = () => {
 							subTitleThree="Study in the Japan and integrate into the society as a professional and start your life "
 						></CountriesGridCarousolItem>
 					</div>
-					<div className="carousel-item" data-bs-interval="2000">
+					<div className="carousel-item" data-bs-interval="4000">
 						<CountriesGridCarousolItem
 							imageOne={imageThree}
 							titleOne="Study in Canada"
@@ -68,7 +68,7 @@ const CountriesGridCarousol = () => {
 							subTitleThree="Study in the UK and integrate into the society as a professional and start your life "
 						></CountriesGridCarousolItem>
 					</div>
-					<div className="carousel-item" data-bs-interval="2000">
+					<div className="carousel-item" data-bs-interval="4000">
 						<CountriesGridCarousolItem
 							imageOne={imageFour}
 							titleOne="Study in Jermany"

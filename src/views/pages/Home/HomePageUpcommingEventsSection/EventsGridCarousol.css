@@ -5,7 +5,7 @@
  }
 
  .eventLogo {
-   width: 60px;
+   width: 425px;
  }
 
  .carButton [data-bs-target] {
@@ -35,6 +35,13 @@
    margin-bottom: -45px;
  }
 
+ .dateMonth {
+   background-color: #6C066E;
+   border: 1px solid gold;
+   color: white;
+   border-radius: 5px;
+ }
+
  /* media query */
  @media (min-width: 1440px) and (max-width: 2559.98px) {}
 
@@ -42,6 +49,10 @@
    .eventsCarousol {
      width: 450px;
      border-radius: 20px;
+   }
+
+   .eventLogo {
+     width: 330px;
    }
  }
 
@@ -53,6 +64,11 @@
      border-radius: 20px;
    }
 
+   .eventLogo {
+     width: 225px;
+     height: 50px;
+   }
+
  }
 
  @media (min-width: 425px) and (max-width: 767.98px) {
@@ -61,6 +77,11 @@
      margin: 0px 2%;
      border-radius: 20px;
    }
+
+   .eventLogo {
+     width: 290px;
+     height: 62px;
+   }
  }
 
  @media (min-width: 320px) and (max-width: 424.98px) {
@@ -68,5 +89,10 @@
      width: 345px;
      margin: 0px 2%;
      border-radius: 20px;
+   }
+
+   .eventLogo {
+     width: 241px;
+     height: 55px;
    }
  }
