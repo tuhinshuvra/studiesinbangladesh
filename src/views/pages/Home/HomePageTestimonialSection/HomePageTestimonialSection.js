@@ -4,12 +4,12 @@ import './HomePageTestimonialSection.css';
 
 const HomePageTestimonialSection = () => {
     return (
-        <div className='bar1'>
+        <div className='bar1 testimonialArea'>
             <h2 className='common_Heading text-center text-primary'>Testimonials</h2>
             <div className='col-lg-9 mx-auto my-5 '>
                 <p className='servicesSub text-center'>Please check the testimonials from our satisfied clients to confirm.</p>
             </div>
-            <div className='testimonialArea d-md-flex bar2'>
+            <div className=' d-md-flex bar2'>
                 <div className='col-lg-5 col-md-6 tesimonialImage'>
                     <img className='  img-fluid' src={TestimonialImage} alt="" />
                 </div>

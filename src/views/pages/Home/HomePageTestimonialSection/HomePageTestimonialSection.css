@@ -1,3 +1,8 @@
+.testimonialArea {
+    padding: 50px 0;
+    background-color: rgb(240, 238, 234);
+}
+
 .bar1 {
     background-image: url(../../../../assets/threeBar.png);
     background-repeat: no-repeat;
@@ -10,9 +15,6 @@
     background-position: 47% 98%;
 }
 
-.testimonialArea {
-    margin: 0 0 150px;
-}
 
 .testimonialImage {
     /* width: 500px; */
@@ -98,7 +100,7 @@
 
 
     .testimonialArea {
-        margin: 50px 0;
+        padding: 50px 0;
 
     }
 
@@ -129,7 +131,7 @@
     }
 
     .testimonialArea {
-        margin: 50px 0;
+        padding: 50px 0;
     }
 
     .testimonialCardOne {
@@ -159,7 +161,7 @@
     }
 
     .testimonialArea {
-        margin: 50px 0;
+        padding: 50px 0;
     }
 
     .testimonialCardOne {

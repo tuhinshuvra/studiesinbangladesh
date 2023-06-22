@@ -11,7 +11,7 @@ import './CountriesGridCarousol.css';
 const CountriesGridCarousol = () => {
 	// fareOne, fareTwo, fareThree, fareFive
 	return (
-		<div className=' mx-auto '>
+		<div className='col-md-11 mx-auto '>
 			{/* ########################## domestic locations flights ################################ */}
 
 			<div id="contriesGridCarousol" className="carousel carColor slide" data-bs-ride="carousel">
@@ -33,7 +33,7 @@ const CountriesGridCarousol = () => {
 							subTitleTwo="Study in the Austrelia and integrate into the society as a professional and start your life "
 
 							imageThree={imageThree}
-							titleThree="Study in United Kingdom"
+							titleThree="Study in UK"
 							subTitleThree="Study in the UK and integrate into the society as a professional and start your life "
 
 						></CountriesGridCarousolItem>
@@ -64,7 +64,7 @@ const CountriesGridCarousol = () => {
 							subTitleTwo="Study in the Austrelia and integrate into the society as a professional and start your life "
 
 							imageThree={imageFour}
-							titleThree="Study in United Kingdom"
+							titleThree="Study in UK"
 							subTitleThree="Study in the UK and integrate into the society as a professional and start your life "
 						></CountriesGridCarousolItem>
 					</div>

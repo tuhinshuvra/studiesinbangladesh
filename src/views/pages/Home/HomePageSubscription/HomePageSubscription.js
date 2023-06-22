@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import './HomePageSubscription.css';
 import { toast } from 'react-hot-toast';
+import './HomePageSubscription.css';
 
 const HomePageSubscription = () => {
     const [email, setEmail] = useState("");

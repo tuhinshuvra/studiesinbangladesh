@@ -10,7 +10,7 @@ import './EventsGridCarousol.css';
 
 const EventsGridCarousol = () => {
 	return (
-		<div className=' mx-auto '>
+		<div className='col-md-11 mx-auto '>
 
 			<div id="eventsGridCarousol" className="carousel  carousel-dark carColor slide" data-bs-ride="carousel">
 
@@ -25,35 +25,34 @@ const EventsGridCarousol = () => {
 						<EventsGridCarousolItem
 							imageOne={imageOne}
 							dateMonth="eventsDate"
-							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
-							 of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
+							subTitleOne="This event will cover the administrative life cycle of the students increased in the Monash University. 
+							This is a 4 hour event with a separate Q&A session after the end of the event."
 
 							imageTwo={imageTwo}
 							dateMonth2="eventsDate"
 							subTitleTwo="This event will cover the administrative life cycle of the students increased in the Monash University. 
-							This is a 4 hour event with a separate Q&A session after the end of the event. "
-
+							This is a 4 hour event with a separate Q&A session after the end of the event."
 						></EventsGridCarousolItem>
 					</div>
 					<div className="carousel-item" data-bs-interval="4000">
 						<EventsGridCarousolItem
 							imageOne={imageThree}
 							dateMonth="eventsDate"
-							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
- 							of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
+							subTitleOne="This event will cover the administrative life cycle of the students increased in the Monash University. 
+							This is a 4 hour event with a separate Q&A session after the end of the event."
 
 							imageTwo={imageFour}
 							dateMonth2="eventsDate"
 							subTitleTwo="This event will cover the administrative life cycle of the students increased in the Monash University. 
-								This is a 4 hour event with a separate Q&A session after the end of the event. "
+								This is a 4 hour event with a separate Q&A session after the end of the event."
 						></EventsGridCarousolItem>
 					</div>
 					<div className="carousel-item" data-bs-interval="4000">
 						<EventsGridCarousolItem
 							imageOne={imageFive}
 							dateMonth="eventsDate"
-							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
- 								of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
+							subTitleOne="This event will cover the administrative life cycle of the students increased in the Monash University. 
+							This is a 4 hour event with a separate Q&A session after the end of the event.."
 
 							imageTwo={imageFour}
 							dateMonth2="eventsDate"
@@ -65,8 +64,8 @@ const EventsGridCarousol = () => {
 						<EventsGridCarousolItem
 							imageOne={imageThree}
 							dateMonth="eventsDate"
-							subTitleOne="This event will cover the administrative life cycle of the students increased in the University
- 								of Western Australia. This is a 4 hour event with a separate Q&A session after the end of the event."
+							subTitleOne="This event will cover the administrative life cycle of the students increased in the Monash University. 
+							This is a 4 hour event with a separate Q&A session after the end of the event.."
 
 							imageTwo={imageFive}
 							dateMonth2="eventsDate"

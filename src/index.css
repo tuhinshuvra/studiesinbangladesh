@@ -25,6 +25,10 @@ code {
   font-size: 40px;
 }
 
+.cardBg {
+  --bs-card-bg: none !important;
+}
+
 .commonSubHead {
   font-weight: 700;
   font-size: 26px;

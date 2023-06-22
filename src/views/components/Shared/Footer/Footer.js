@@ -47,10 +47,12 @@ const Footer = () => {
                     <div className="  col-md-4 col-lg-3 text-center text-md-start">
                         <h5 className=' fw-bold text-center text-white'>Office</h5>
                         <ul className="nav flex-column">
-                            <p className=' text-white'>Shah Makhdum Avenue Road, <br />
-                                Sector-11, House-20. Uttara, Dhaka</p>
-                            <p className=' text-white my-0'> <b>Email:</b>  emailemail@gmail.com</p>
-                            <p className=' text-white my-0'> <b>Phone:</b>  012345678900</p>
+                            <p className=' text-white my-0'> <b>Address:</b> MAG House, House No-20,
+                                Shah Makhdum Avenue, Sector-11,
+                                Uttara, Dhaka-1230, Bangladesh.</p>
+                            <p className=' text-white my-0'> <b>Email:</b> info@gbl-bd.com</p>
+                            <p className=' text-white my-0'> <b>Phone:</b> 02-224470053, 02-224470056, <br />
+                                02-224470057 </p>
                         </ul>
                     </div>
                 </div>

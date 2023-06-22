@@ -15,7 +15,7 @@ import './GridCarousol.css'
 
 const GridCarousol = () => {
 	return (
-		<div className=' col-md-12 mx-auto '>
+		<div className=' col-md-11 mx-auto '>
 
 			<div id="featureUniversities" className="carousel  carousel-dark carColor slide" data-bs-ride="carousel">
 				<div className="carousel-indicators carButton">

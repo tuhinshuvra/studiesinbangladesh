@@ -1,5 +1,6 @@
 .servicesSection {
-    margin: 100px 0;
+    padding: 50px 0;
+    /* background-color: rgb(239, 245, 239); */
 }
 
 .servicesSub {
@@ -18,7 +19,7 @@
 
 .cardOne,
 .cardThree {
-    z-index: -1;
+    /* z-index: -1; */
 }
 
 .cardTwo {
@@ -78,8 +79,7 @@
 @media (min-width: 768px) and (max-width: 991.98px) {
     .serviceCard {
         width: 240px;
-        height: 244px;
-        border-radius: 40px;
+        height: 265px;
     }
 
     .cardSub {

@@ -1,5 +1,5 @@
 .carousolImg {
-    width: 417px;
+    width: 390px;
 }
 
 
@@ -16,7 +16,7 @@
 
 @media (min-width: 768px) and (max-width: 991.98px) {
     .carousolImg {
-        width: 230px;
+        width: 210px;
     }
 }
 
