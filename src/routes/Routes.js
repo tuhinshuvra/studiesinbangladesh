@@ -1,5 +1,8 @@
 import AboutUs from "../views/pages/AboutUs/AboutUs";
 import ApplyForm from "../views/pages/Apply/ApplyForm";
+import ApplyNow from "../views/pages/Apply/ApplyNow/ApplyNow";
+import BackgroundInfo from "../views/pages/Apply/BackgroundInfo/BackgroundInfo";
+import BasicInfoForm from "../views/pages/Apply/BasicForm/BasicInfoForm";
 import HomePageServicesSection from "../views/pages/Home/HomePageServicesSection/HomePageServicesSection";
 import HomePageTestimonialSection from "../views/pages/Home/HomePageTestimonialSection/HomePageTestimonialSection";
 
@@ -36,6 +39,18 @@ const router = createBrowserRouter([
             {
                 path: "/testimonial",
                 element: <HomePageTestimonialSection></HomePageTestimonialSection>
+            },
+            {
+                path: "/basicInfo",
+                element: <BasicInfoForm></BasicInfoForm>
+            },
+            {
+                path: "/backgroundInfo",
+                element: <BackgroundInfo></BackgroundInfo>
+            },
+            {
+                path: "/applyNow",
+                element: <ApplyNow></ApplyNow>
             },
 
             {

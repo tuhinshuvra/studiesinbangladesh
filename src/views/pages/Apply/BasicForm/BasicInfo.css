@@ -1,0 +1,18 @@
+.personalInfo {
+    /* border-style: groove solid; */
+    /* border-color: #6C066F; */
+    border-radius: 15px;
+    border: 1px solid #6C066F;
+
+
+}
+
+.profile_pic {
+    width: 150px;
+}
+
+.star {
+    color: red;
+    font-size: 80%;
+    margin-left: 4px;
+}

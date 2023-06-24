@@ -7,19 +7,19 @@
     font-weight: bold;
 }
 
+.footer_btn:hover {
+    color: rgba(108, 6, 110, 0.63);
+    background-color: white;
+    padding: 6px;
+    border-radius: 8px;
+}
+
 .footerSub {
     color: white;
 }
 
 .hrBar {
     height: 10px;
-}
-
-.footer_btn:hover {
-    color: black;
-    background-color: #d6b9b9;
-    padding: 6px;
-    border-radius: 8px;
 }
 
 .footer_bg {
@@ -31,18 +31,23 @@
 }
 
 .footer_logo {
-    width: 300px;
+    width: 180px;
 }
 
 
 @media (min-width: 768px) and (max-width: 768px) {
     .footer_logo {
-        width: 200px;
+        width: 160px;
     }
 }
 
 
 @media (min-width: 320px) and (max-width: 992px) {
+    .footer_logo {
+        width: 160px;
+        margin: 10px 0;
+    }
+
     .center-xm {
         justify-content: center;
     }

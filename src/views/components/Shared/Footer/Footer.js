@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import FooterLogo from '../../../../assets/logo/sib_footer_logo.png'
+import FooterLogo from '../../../../assets/logo/sib_logo1.png'
 import { FaFacebookF, FaYoutube, FaTwitter, } from 'react-icons/fa';
 import './Footer.css';
 
@@ -11,9 +11,12 @@ const Footer = () => {
                 <div className="row">
                     <div className="col-12 col-md-4 col-lg-5 d-flex   ">
                         <div className=''>
-                            <Link to="/"> <img className='footer_logo   mb-md-1 ' src={FooterLogo} alt="" /></Link>
+                            <div className=' text-center text-md-start'>
+                                <Link to="/" > <img className='footer_logo    mb-md-1' src={FooterLogo} alt="" /></Link>
+
+                            </div>
                             <div className='col-lg-10 ms-auto'>
-                                <p className=' mx-auto footerSub   text-center text-lg-start '>We are available to consult for taking your higher education to the next level so that you can stay competitive. .       </p>
+                                <p className='mx-auto footerSub  text-center text-lg-start'>We are available to consult for taking your higher education to the next level so that you can stay competitive.</p>
                             </div>
                         </div>
                     </div>
@@ -24,10 +27,10 @@ const Footer = () => {
                             <h5 className='fw-bold text-center text-white'>Links</h5>
 
                             <ul className="nav flex-column ">
-                                <li className="mb-2 text-center"><Link to="/booking" className="  footer_btn fw-bold">Booking</Link></li>
-                                <li className="mb-2 text-center"><Link to="/services" className="  footer_btn fw-bold">Sevices</Link></li>
-                                <li className="mb-2 text-center"><Link to="/about" className="  footer_btn fw-bold">Testimonial</Link></li>
-                                <li className="mb-2 text-center"><Link to="/about" className="  footer_btn fw-bold">FAQ</Link></li>
+                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Booking</Link></li>
+                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Sevices</Link></li>
+                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Testimonial</Link></li>
+                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">FAQ</Link></li>
                             </ul>
                         </div>
                     </div>
@@ -36,10 +39,10 @@ const Footer = () => {
                             <h5 className='fw-bold text-center text-white'>Links</h5>
 
                             <ul className="nav flex-column ">
-                                <li className="mb-2 text-center"><Link to="/booking" className="  footer_btn fw-bold">Booking</Link></li>
-                                <li className="mb-2 text-center"><Link to="/services" className="  footer_btn fw-bold">Sevices</Link></li>
-                                <li className="mb-2 text-center"><Link to="/about" className="  footer_btn fw-bold">Testimonial</Link></li>
-                                <li className="mb-2 text-center"><Link to="/about" className="  footer_btn fw-bold">FAQ</Link></li>
+                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Booking</Link></li>
+                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Sevices</Link></li>
+                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Testimonial</Link></li>
+                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">FAQ</Link></li>
                             </ul>
                         </div>
                     </div>
