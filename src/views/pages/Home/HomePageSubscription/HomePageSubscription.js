@@ -9,7 +9,6 @@ const HomePageSubscription = () => {
         event.preventDefault();
         const subsEmail = event.target.value;
         setEmail(subsEmail);
-
     }
     // console.log("Email Address : ", email);
 

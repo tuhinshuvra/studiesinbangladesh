@@ -1,6 +1,6 @@
 .testimonialArea {
     padding: 50px 0;
-    background-color: rgb(240, 238, 234);
+    /* background-color: rgb(240, 238, 234); */
 }
 
 .bar1 {
@@ -14,7 +14,6 @@
     background-repeat: no-repeat;
     background-position: 47% 98%;
 }
-
 
 .testimonialImage {
     /* width: 500px; */
@@ -122,6 +121,10 @@
 }
 
 @media (min-width: 425px) and (max-width: 767.98px) {
+    .testimonialArea {
+        padding: 40px 0;
+    }
+
     .bar1 {
         background-image: none !important;
     }
@@ -130,9 +133,6 @@
         background-image: none !important;
     }
 
-    .testimonialArea {
-        padding: 50px 0;
-    }
 
     .testimonialCardOne {
         width: 366px;
@@ -152,6 +152,10 @@
 }
 
 @media (min-width: 320px) and (max-width: 424.98px) {
+    .testimonialArea {
+        padding: 40px 0;
+    }
+
     .bar1 {
         background-image: none !important;
     }
@@ -160,9 +164,6 @@
         background-image: none !important;
     }
 
-    .testimonialArea {
-        padding: 50px 0;
-    }
 
     .testimonialCardOne {
         width: 335px;

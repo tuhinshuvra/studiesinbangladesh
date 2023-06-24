@@ -5,7 +5,7 @@ import './HomePageHeroSection.css'
 
 const HomePageHeroSection = () => {
     return (
-        <div className=' d-md-flex justify-content-between heroArea bg1 '>
+        <div className='heroArea d-md-flex justify-content-between  bg1 '>
             <div className='heroLeft col-md-9 bg2'>
                 <div className=' col-lg-8 mx-auto'>
 

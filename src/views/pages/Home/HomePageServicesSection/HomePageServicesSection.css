@@ -1,6 +1,5 @@
 .servicesSection {
     padding: 50px 0;
-    /* background-color: rgb(239, 245, 239); */
 }
 
 .servicesSub {
@@ -95,6 +94,10 @@
 }
 
 @media (min-width: 425px) and (max-width: 767.98px) {
+    .servicesSection {
+        padding: 0 0;
+    }
+
     .serviceCard {
         margin: 0 9%;
         width: 340px;
@@ -114,6 +117,10 @@
 }
 
 @media (min-width: 320px) and (max-width: 424.98px) {
+    .servicesSection {
+        padding: 0 0;
+    }
+
     .serviceCard {
         width: 300px;
         margin: 0 7%;

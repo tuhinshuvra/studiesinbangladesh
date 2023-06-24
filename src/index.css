@@ -94,6 +94,11 @@ code {
     font-size: 33px;
   }
 
+  .common_Heading2 {
+    font-size: 30px;
+  }
+
+
   .commonSubHead {
     font-size: 21px;
   }
@@ -103,6 +108,10 @@ code {
 @media (min-width: 320px) and (max-width: 424.98px) {
   .common_Heading {
     font-size: 33px;
+  }
+
+  .common_Heading2 {
+    font-size: 30px;
   }
 
   .commonSubHead {
