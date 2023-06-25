@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./BasicInfo.css";
 
 const BasicInfoForm = () => {
@@ -10,7 +10,7 @@ const BasicInfoForm = () => {
 
 
     const handlePermanentAddress = () => {
-        console.log("I am clicked");
+        // console.log("I am clicked");
         let preAddressLineOne = document.getElementById("preAddressLineOne");
         let preAddressLineTwo = document.getElementById("preAddressLineTwo");
         let preCity = document.getElementById("preCity");
@@ -54,6 +54,10 @@ const BasicInfoForm = () => {
 
     return (
         <div className="col-lg-8  col-md-10 mx-auto">
+            <div className=" d-flex justify-content-end mt-5">
+                <Link to="/passportInfo" className=" btn btn-primary btn-sm">Passport Info</Link>
+                <Link to="/applyNow" className=" btn btn-primary btn-sm ms-2">Academic Info</Link>
+            </div>
             <h2 className=" text-primary text-center fw-bold">Enter Basic Information</h2>
             <form onSubmit={handleOnSubmit} className="">
                 <div className="my-md-3">
@@ -262,9 +266,9 @@ const BasicInfoForm = () => {
 
                     <div className=" d-md-flex justify-content-between">
                         <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic ">Permanent Address</span>
-                        <div class="form-check " onClick={handlePermanentAddress}>
-                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                            <label class="form-check-label fw-bold fst-italic" for="flexCheckDefault">
+                        <div className="form-check " onClick={handlePermanentAddress}>
+                            <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            <label className="form-check-label fw-bold fst-italic" for="flexCheckDefault">
                                 Same as present address
                             </label>
                         </div>

@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
-import "./BackgroundInfo.css";
+import { Link, useNavigate } from "react-router-dom";
+import "./PassportInfo.css";
 
-const BackgroundInfo = () => {
+const PassportInfo = () => {
     const [disabled, setDisabled] = useState(true);
     const navigate = useNavigate();
     const [passportInfo, setPassportInfo] = useState([]);
@@ -29,16 +29,21 @@ const BackgroundInfo = () => {
 
     return (
         <div className="col-lg-8  col-md-10 mx-auto">
+            <div className=" d-flex justify-content-end mt-5">
+                <Link to="/basicInfo" className=" btn btn-primary btn-sm">Basic Info</Link>
+                <Link to="/applyNow" className=" btn btn-primary btn-sm ms-2">Apply Now</Link>
+            </div>
+
             <h2 className=" text-primary text-center fw-bold">Enter Passport and reference Information</h2>
 
-
             <form onSubmit={handleOnSubmit} className="">
+
                 <div className="my-md-3">
                     <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic my-3">Passport Information</span>
 
-                    <div class="form-check my-3" onClick={toggleInput}>
-                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
-                        <label class="form-check-label fw-bold fst-italic" for="flexCheckDefault">
+                    <div className="form-check my-3" onClick={toggleInput}>
+                        <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label className="form-check-label fw-bold fst-italic" for="flexCheckDefault">
                             I have passport
                         </label>
                     </div>
@@ -249,4 +254,4 @@ const BackgroundInfo = () => {
     );
 };
 
-export default BackgroundInfo;
+export default PassportInfo;

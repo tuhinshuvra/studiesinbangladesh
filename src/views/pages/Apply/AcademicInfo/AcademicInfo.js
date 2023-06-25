@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
-import { useNavigate } from "react-router-dom";
-import "./ApplyNow.css";
+import { Link, useNavigate } from "react-router-dom";
+import "./AcademicInfo.css";
 
-const BackgroundInfo = () => {
+const AcademicInfo = () => {
     const [disabled, setDisabled] = useState(true);
     const navigate = useNavigate();
     const [passportInfo, setPassportInfo] = useState([]);
@@ -29,6 +29,10 @@ const BackgroundInfo = () => {
 
     return (
         <div className="col-lg-12  col-md-9 mx-auto">
+            <div className=" d-flex justify-content-end mt-5">
+                <Link to="/passportInfo" className=" btn btn-primary btn-sm">Passport Info</Link>
+                <Link to="/basicInfo" className=" btn btn-primary btn-sm ms-2">Basic Info</Link>
+            </div>
             <div className="">
                 <h2 className=" text-primary text-center fw-bold">Enter Academic Information</h2>
 
@@ -64,20 +68,20 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">Higher Secondary/ Class XII / A Level / Equivalent Qualification Score</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="hscMarks" id="hscMarksYes" checked />
-                                            <label class="form-check-label" for="hscMarksYes">                                                Yes
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="hscMarks" id="hscMarksYes" checked />
+                                            <label className="form-check-label" for="hscMarksYes">                                                Yes
                                             </label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="hscMarks" id="hscMarksNo" />
-                                            <label class="form-check-label" for="hscMarksNo">
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="hscMarks" id="hscMarksNo" />
+                                            <label className="form-check-label" for="hscMarksNo">
                                                 No
                                             </label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="hscMarks" id="hscMarksAppeared" />
-                                            <label class="form-check-label" for="hscMarksAppeared">
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="hscMarks" id="hscMarksAppeared" />
+                                            <label className="form-check-label" for="hscMarksAppeared">
                                                 appeared
                                             </label>
                                         </div>
@@ -99,17 +103,17 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">Diploma Score</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="diplomaMarks" id="diplomaMarksYes" />
-                                            <label class="form-check-label" for="diplomaMarksYes">Yes</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="diplomaMarks" id="diplomaMarksYes" />
+                                            <label className="form-check-label" for="diplomaMarksYes">Yes</label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="diplomaMarks" id="diplomaMarksNo" checked />
-                                            <label class="form-check-label" for="diplomaMarksNo">No</label>
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="diplomaMarks" id="diplomaMarksNo" checked />
+                                            <label className="form-check-label" for="diplomaMarksNo">No</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="diplomaMarks" id="diplomaMarksAppeared" />
-                                            <label class="form-check-label" for="diplomaMarksAppeared">appeared</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="diplomaMarks" id="diplomaMarksAppeared" />
+                                            <label className="form-check-label" for="diplomaMarksAppeared">appeared</label>
                                         </div>
                                     </div>
                                 </div>
@@ -129,17 +133,17 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">Graduation Score</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="graduationMarks" id="graduationMarksYes" />
-                                            <label class="form-check-label" for="graduationMarksYes">Yes</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="graduationMarks" id="graduationMarksYes" />
+                                            <label className="form-check-label" for="graduationMarksYes">Yes</label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="graduationMarks" id="graduationMarksNo" checked />
-                                            <label class="form-check-label" for="graduationMarksNo">No</label>
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="graduationMarks" id="graduationMarksNo" checked />
+                                            <label className="form-check-label" for="graduationMarksNo">No</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="graduationMarks" id="graduationMarksAppeared" />
-                                            <label class="form-check-label" for="graduationMarksAppeared">appeared</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="graduationMarks" id="graduationMarksAppeared" />
+                                            <label className="form-check-label" for="graduationMarksAppeared">appeared</label>
                                         </div>
                                     </div>
                                 </div>
@@ -159,17 +163,17 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">Post Graduation Score</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="postgraduationMarks" id="postgraduationMarksYes" />
-                                            <label class="form-check-label" for="postgraduationMarksYes">Yes</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="postgraduationMarks" id="postgraduationMarksYes" />
+                                            <label className="form-check-label" for="postgraduationMarksYes">Yes</label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="postgraduationMarks" id="postgraduationMarksNo" checked />
-                                            <label class="form-check-label" for="postgraduationMarksNo">No</label>
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="postgraduationMarks" id="postgraduationMarksNo" checked />
+                                            <label className="form-check-label" for="postgraduationMarksNo">No</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="postgraduationMarks" id="postgraduationMarksAppeared" />
-                                            <label class="form-check-label" for="postgraduationMarksAppeared">appeared</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="postgraduationMarks" id="postgraduationMarksAppeared" />
+                                            <label className="form-check-label" for="postgraduationMarksAppeared">appeared</label>
                                         </div>
                                     </div>
                                 </div>
@@ -188,17 +192,17 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">NEET Score</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="neetMarks" id="neetScoreYes" />
-                                            <label class="form-check-label" for="neetScoreYes">Yes</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="neetMarks" id="neetScoreYes" />
+                                            <label className="form-check-label" for="neetScoreYes">Yes</label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="neetMarks" id="neetScoreNo" checked />
-                                            <label class="form-check-label" for="neetScoreNo">No</label>
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="neetMarks" id="neetScoreNo" checked />
+                                            <label className="form-check-label" for="neetScoreNo">No</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="neetMarks" id="neetScoreAppeared" />
-                                            <label class="form-check-label" for="neetScoreAppeared">appeared</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="neetMarks" id="neetScoreAppeared" />
+                                            <label className="form-check-label" for="neetScoreAppeared">appeared</label>
                                         </div>
                                     </div>
                                 </div>
@@ -229,17 +233,17 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">Do you have GRE score?</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="greMarks" id="greScoreYes" />
-                                            <label class="form-check-label" for="greScoreYes">Yes</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="greMarks" id="greScoreYes" />
+                                            <label className="form-check-label" for="greScoreYes">Yes</label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="greMarks" id="greScoreNo" checked />
-                                            <label class="form-check-label" for="greScoreNo">No</label>
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="greMarks" id="greScoreNo" checked />
+                                            <label className="form-check-label" for="greScoreNo">No</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="greMarks" id="greScoreAppeared" />
-                                            <label class="form-check-label" for="greScoreAppeared">appeared</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="greMarks" id="greScoreAppeared" />
+                                            <label className="form-check-label" for="greScoreAppeared">appeared</label>
                                         </div>
                                     </div>
                                 </div>
@@ -259,17 +263,17 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">Do you have GMAT score?</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gmatMarks" id="gmatScoreYes" />
-                                            <label class="form-check-label" for="gmatScoreYes">Yes</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="gmatMarks" id="gmatScoreYes" />
+                                            <label className="form-check-label" for="gmatScoreYes">Yes</label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="gmatMarks" id="gmatScoreNo" checked />
-                                            <label class="form-check-label" for="gmatScoreNo">No</label>
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="gmatMarks" id="gmatScoreNo" checked />
+                                            <label className="form-check-label" for="gmatScoreNo">No</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="gmatMarks" id="gmatScoreAppeared" />
-                                            <label class="form-check-label" for="gmatScoreAppeared">appeared</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="gmatMarks" id="gmatScoreAppeared" />
+                                            <label className="form-check-label" for="gmatScoreAppeared">appeared</label>
                                         </div>
                                     </div>
                                 </div>
@@ -289,17 +293,17 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">Do you have SAT Level 1 score?</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="satOneMarks" id="satOneScoreYes" />
-                                            <label class="form-check-label" for="satOneScoreYes">Yes</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="satOneMarks" id="satOneScoreYes" />
+                                            <label className="form-check-label" for="satOneScoreYes">Yes</label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="satOneMarks" id="satOneScoreNo" checked />
-                                            <label class="form-check-label" for="satOneScoreNo">No</label>
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="satOneMarks" id="satOneScoreNo" checked />
+                                            <label className="form-check-label" for="satOneScoreNo">No</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="satOneMarks" id="satOneScoreAppeared" />
-                                            <label class="form-check-label" for="satOneScoreAppeared">appeared</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="satOneMarks" id="satOneScoreAppeared" />
+                                            <label className="form-check-label" for="satOneScoreAppeared">appeared</label>
                                         </div>
                                     </div>
                                 </div>
@@ -320,17 +324,17 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">Do you have SAT Level 2 score?</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="satTwoMarks" id="satTwoScoreYes" />
-                                            <label class="form-check-label" for="satTwoScoreYes">Yes</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="satTwoMarks" id="satTwoScoreYes" />
+                                            <label className="form-check-label" for="satTwoScoreYes">Yes</label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="satTwoMarks" id="satTwoScoreNo" checked />
-                                            <label class="form-check-label" for="satTwoScoreNo">No</label>
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="satTwoMarks" id="satTwoScoreNo" checked />
+                                            <label className="form-check-label" for="satTwoScoreNo">No</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="satTwoMarks" id="satTwoScoreAppeared" />
-                                            <label class="form-check-label" for="satTwoScoreAppeared">appeared</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="satTwoMarks" id="satTwoScoreAppeared" />
+                                            <label className="form-check-label" for="satTwoScoreAppeared">appeared</label>
                                         </div>
                                     </div>
                                 </div>
@@ -349,17 +353,17 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">Do you have TOEFL score?</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="toffelMarks" id="toffelScoreYes" />
-                                            <label class="form-check-label" for="toffelScoreYes">Yes</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="toffelMarks" id="toffelScoreYes" />
+                                            <label className="form-check-label" for="toffelScoreYes">Yes</label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="toffelMarks" id="toffelScoreNo" checked />
-                                            <label class="form-check-label" for="toffelScoreNo">No</label>
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="toffelMarks" id="toffelScoreNo" checked />
+                                            <label className="form-check-label" for="toffelScoreNo">No</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="toffelMarks" id="toffelScoreAppeared" />
-                                            <label class="form-check-label" for="toffelScoreAppeared">appeared</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="toffelMarks" id="toffelScoreAppeared" />
+                                            <label className="form-check-label" for="toffelScoreAppeared">appeared</label>
                                         </div>
                                     </div>
                                 </div>
@@ -378,17 +382,17 @@ const BackgroundInfo = () => {
                                 <div className=" d-flex flex-column">
                                     <span className="label-text text-md fw-bold">Do you have IELTS score?</span>
                                     <div className=" d-flex">
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="ieltsMarks" id="ieltsScoreYes" />
-                                            <label class="form-check-label" for="ieltsScoreYes">Yes</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="ieltsMarks" id="ieltsScoreYes" />
+                                            <label className="form-check-label" for="ieltsScoreYes">Yes</label>
                                         </div>
-                                        <div class="form-check mx-4">
-                                            <input class="form-check-input" type="radio" name="ieltsMarks" id="ieltsScoreNo" checked />
-                                            <label class="form-check-label" for="ieltsScoreNo">No</label>
+                                        <div className="form-check mx-4">
+                                            <input className="form-check-input" type="radio" name="ieltsMarks" id="ieltsScoreNo" checked />
+                                            <label className="form-check-label" for="ieltsScoreNo">No</label>
                                         </div>
-                                        <div class="form-check">
-                                            <input class="form-check-input" type="radio" name="ieltsMarks" id="ieltsScoreAppeared" />
-                                            <label class="form-check-label" for="ieltsScoreAppeared">appeared</label>
+                                        <div className="form-check">
+                                            <input className="form-check-input" type="radio" name="ieltsMarks" id="ieltsScoreAppeared" />
+                                            <label className="form-check-label" for="ieltsScoreAppeared">appeared</label>
                                         </div>
                                     </div>
                                 </div>
@@ -419,4 +423,4 @@ const BackgroundInfo = () => {
     );
 };
 
-export default BackgroundInfo;
+export default AcademicInfo;

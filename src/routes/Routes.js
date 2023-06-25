@@ -1,11 +1,10 @@
 import AboutUs from "../views/pages/AboutUs/AboutUs";
+import AcademicInfo from "../views/pages/Apply/AcademicInfo/AcademicInfo";
 import ApplyForm from "../views/pages/Apply/ApplyForm";
-import ApplyNow from "../views/pages/Apply/ApplyNow/ApplyNow";
-import BackgroundInfo from "../views/pages/Apply/BackgroundInfo/BackgroundInfo";
-import BasicInfoForm from "../views/pages/Apply/BasicForm/BasicInfoForm";
+import PassportInfo from "../views/pages/Apply/PassportInfo/PassportInfo";
+import BasicInfoForm from "../views/pages/Apply/BasicInfo/BasicInfoForm";
 import HomePageServicesSection from "../views/pages/Home/HomePageServicesSection/HomePageServicesSection";
 import HomePageTestimonialSection from "../views/pages/Home/HomePageTestimonialSection/HomePageTestimonialSection";
-import HomePageUpcomingEventsModalData from "../views/pages/Home/HomePageUpcommingEventsSection/HomePageUpcomingEventsModalData";
 import HomePageUpcommingEventsSection from "../views/pages/Home/HomePageUpcommingEventsSection/HomePageUpcommingEventsSection";
 
 const { createBrowserRouter } = require("react-router-dom");
@@ -52,12 +51,12 @@ const router = createBrowserRouter([
                 element: <BasicInfoForm></BasicInfoForm>
             },
             {
-                path: "/backgroundInfo",
-                element: <BackgroundInfo></BackgroundInfo>
+                path: "/passportInfo",
+                element: <PassportInfo></PassportInfo>
             },
             {
                 path: "/applyNow",
-                element: <ApplyNow></ApplyNow>
+                element: <AcademicInfo></AcademicInfo>
             },
 
             {
