@@ -95,7 +95,7 @@
 
 @media (min-width: 425px) and (max-width: 767.98px) {
     .servicesSection {
-        padding: 0 0;
+        padding: 50 0;
     }
 
     .serviceCard {
@@ -118,8 +118,10 @@
 
 @media (min-width: 320px) and (max-width: 424.98px) {
     .servicesSection {
-        padding: 0 0;
+        padding: 50px 0;
     }
+
+
 
     .serviceCard {
         width: 300px;

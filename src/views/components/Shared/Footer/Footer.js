@@ -15,7 +15,7 @@ const Footer = () => {
                                 <Link to="/" > <img className='footer_logo    mb-md-1' src={FooterLogo} alt="" /></Link>
 
                             </div>
-                            <div className='col-lg-10 ms-auto'>
+                            <div className='footerSlogan'>
                                 <p className='mx-auto footerSub  text-center text-lg-start'>We are available to consult for taking your higher education to the next level so that you can stay competitive.</p>
                             </div>
                         </div>
@@ -27,9 +27,9 @@ const Footer = () => {
                             <h5 className='fw-bold text-center text-white'>Links</h5>
 
                             <ul className="nav flex-column ">
-                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Booking</Link></li>
-                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Sevices</Link></li>
-                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Testimonial</Link></li>
+                                <li className="mb-2 text-center"><Link to="/applyNow" className="  footer_btn fw-bold">Booking</Link></li>
+                                <li className="mb-2 text-center"><Link to="/services" className="  footer_btn fw-bold">Sevices</Link></li>
+                                <li className="mb-2 text-center"><Link to="/testimonial" className="  footer_btn fw-bold">Testimonial</Link></li>
                                 <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">FAQ</Link></li>
                             </ul>
                         </div>
@@ -39,9 +39,9 @@ const Footer = () => {
                             <h5 className='fw-bold text-center text-white'>Links</h5>
 
                             <ul className="nav flex-column ">
-                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Booking</Link></li>
-                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Sevices</Link></li>
-                                <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">Testimonial</Link></li>
+                                <li className="mb-2 text-center"><Link to="/applyNow" className="  footer_btn fw-bold">Booking</Link></li>
+                                <li className="mb-2 text-center"><Link to="/services" className="  footer_btn fw-bold">Sevices</Link></li>
+                                <li className="mb-2 text-center"><Link to="/testimonial" className="  footer_btn fw-bold">Testimonial</Link></li>
                                 <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">FAQ</Link></li>
                             </ul>
                         </div>
