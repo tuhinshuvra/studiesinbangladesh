@@ -5,6 +5,8 @@ import BackgroundInfo from "../views/pages/Apply/BackgroundInfo/BackgroundInfo";
 import BasicInfoForm from "../views/pages/Apply/BasicForm/BasicInfoForm";
 import HomePageServicesSection from "../views/pages/Home/HomePageServicesSection/HomePageServicesSection";
 import HomePageTestimonialSection from "../views/pages/Home/HomePageTestimonialSection/HomePageTestimonialSection";
+import HomePageUpcomingEventsModalData from "../views/pages/Home/HomePageUpcommingEventsSection/HomePageUpcomingEventsModalData";
+import HomePageUpcommingEventsSection from "../views/pages/Home/HomePageUpcommingEventsSection/HomePageUpcommingEventsSection";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: MainLayout } = require("../layout/MainLayout");
@@ -40,6 +42,11 @@ const router = createBrowserRouter([
                 path: "/testimonial",
                 element: <HomePageTestimonialSection></HomePageTestimonialSection>
             },
+            {
+                path: "/events",
+                element: <HomePageUpcommingEventsSection></HomePageUpcommingEventsSection>
+            },
+
             {
                 path: "/basicInfo",
                 element: <BasicInfoForm></BasicInfoForm>

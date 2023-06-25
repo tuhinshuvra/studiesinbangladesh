@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import HomePageHeroSection from './HomePageHeroSection/HomePageHeroSection';
 import HomePageFeaturedUniversities from './HomePageFeaturedUniversities/HomePageFeaturedUniversities';
 import HomePageServicesSection from './HomePageServicesSection/HomePageServicesSection';

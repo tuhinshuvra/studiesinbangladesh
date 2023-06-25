@@ -1,5 +1,5 @@
 .commonMarginTop {
-    margin-top: 90px;
+    margin-top: 73px;
 }
 
 
@@ -19,14 +19,14 @@
 
 @media (min-width: 425px) and (max-width: 767.98px) {
     .commonMarginTop {
-        /* margin-top: 160px; */
+        margin-top: 0px;
     }
 
 }
 
 @media (min-width: 320px) and (max-width: 424.98px) {
     .commonMarginTop {
-        /* margin-top: 160px; */
+        margin-top: 0px;
     }
 
 }

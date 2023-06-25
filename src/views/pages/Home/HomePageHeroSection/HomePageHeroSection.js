@@ -6,7 +6,7 @@ import './HomePageHeroSection.css'
 const HomePageHeroSection = () => {
     return (
         <div className='heroArea d-md-flex justify-content-between  bg1 '>
-            <div className='heroLeft col-md-9 bg2'>
+            <div className='heroLeft col-md-9 bg2' data-aos="fade-up-right">
                 <div className=' col-lg-8 mx-auto'>
 
                     <h2 className='heroTitle fw-bold text-primary text-md-start  text-center'>We Help to Build Your Dream</h2>
@@ -16,7 +16,7 @@ const HomePageHeroSection = () => {
                     </Link>
                 </div>
             </div>
-            <div className=' col-md-3 d-flex justify-content-end my-5'>
+            <div className=' col-md-3 d-flex justify-content-end my-5' data-aos="zoom-in">
                 <img src={HeroImg} className='heroImg d-none d-md-block' alt="" />
             </div>
 

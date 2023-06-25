@@ -19,8 +19,8 @@ const HomePageSubscription = () => {
     return (
         <div className="subArea col-xl-12">
             <div className=" d-flex flex-column justify-content-center align-items-center  g-lg-5 my-4">
-                <div className="col-lg-7 text-center  mx-auto  ">
-                    <h2 className="common_Heading2  mb-3 text-primary" data-aos=" fade-up-right">Subscribe & Receive <br />Our Exclusive Offers</h2>
+                <div className="col-lg-7 text-center  mx-auto" data-aos="fade-up-right">
+                    <h2 className="common_Heading2  mb-3 text-primary">Subscribe & Receive <br />Our Exclusive Offers</h2>
                     {/* <p className="col-lg-10 fs-4">Below is an example form built entirely with Bootstrap’s form controls. Each required form group has a validation state that can be triggered by attempting to submit the form without completing it.</p> */}
                 </div>
 

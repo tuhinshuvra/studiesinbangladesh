@@ -17,17 +17,19 @@ const Navbar = () => {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse navCollapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav ms-auto mb-2 mb-lg-0 fw-bold">
+                        <ul className="navbar-nav d-flex justify-content-md-center align-items-md-center justify-content-end align-items-end ms-auto mb-2 mb-lg-0 fw-bold">
+
+
                             <li className="nav-item">
-                                <Link className="nav-link " aria-current="page" to="/about">About Us</Link>
+                                <Link className="  mx-lg-3   navBtn mx-lg-4 mx-2 " to="/services">Services</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link mx-lg-3" to="/services">Services</Link>
+                                <Link className="    navBtn me-lg-4 mx-2 " aria-current="page" to="/events">Events</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="nav-link  " to="/testimonial">Testimonials</Link>
+                                <Link className="    navBtn mx-lg-4 mx-2 mb-md-0 " to="/testimonial">Testimonials</Link>
                             </li>
 
                             <li>

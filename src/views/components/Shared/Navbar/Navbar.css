@@ -8,12 +8,23 @@
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 1;
+    z-index: 6;
+
     /*  height: 85px;*/
 }
 
 .navLogo {
     width: 120px;
+}
+
+.navBtn {
+    color: #6C066E;
+    text-decoration: none;
+    /* margin: 10px 0 !important; */
+}
+
+.navBtn:hover {
+    text-decoration: underline;
 }
 
 
