@@ -3,312 +3,414 @@ import { toast } from "react-hot-toast";
 import { useNavigate } from "react-router-dom";
 import "./ApplyNow.css";
 
-const ApplyNow = () => {
+const BackgroundInfo = () => {
+    const [disabled, setDisabled] = useState(true);
     const navigate = useNavigate();
-    const [basicInfo, setBasicInfo] = useState([]);
+    const [passportInfo, setPassportInfo] = useState([]);
+
+    const toggleInput = () => {
+        setDisabled(!disabled);
+    };
 
     const handleOnChange = (event) => {
         const field = event.target.name;
         const value = event.target.value;
-        const newData = { ...basicInfo };
+        const newData = { ...passportInfo };
         newData[field] = value;
-        setBasicInfo(newData)
+        setPassportInfo(newData)
     }
-
 
     const handleOnSubmit = (event) => {
 
     }
 
-
-    console.log("basicInfo :", basicInfo);
+    console.log("basicInfo :", passportInfo);
 
 
     return (
-        <div className="col-lg-8  col-md-10 mx-auto ">
-            <h2 className=" text-primary text-center fw-bold my-4">Enter Basic Information</h2>
+        <div className="col-lg-12  col-md-9 mx-auto">
+            <div className="">
+                <h2 className=" text-primary text-center fw-bold">Enter Academic Information</h2>
 
-
-
+            </div>
             <form onSubmit={handleOnSubmit} className="">
-                <div className=" d-flex justify-content-end my-0">
-                    <p className='   fw-bold'>Red Star (<span className="star">&#x2605; </span>)  denotes must be filled</p>
-                </div>
-                <div className=" my-md-3">
-                    <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic">Personal Information</span>
-                    <div className=" row   form-outline personalInfo">
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">First Name</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="firstName"
-                                    className="input form-control "
-                                    id="firstName"
-                                    type="text"
-                                    placeholder="Enter first name"
-                                />
+                <div className=" d-lg-flex my-md-3">
+
+                    <div className="personalInfo col-lg-6 mx-1 ">
+                        <div className="row   form-outline p-3">
+                            <div className=" d-flex justify-content-evenly">
+                                <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic my-3">Qualification</span>
+                                <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic my-3">Percentage</span>
                             </div>
-                        </div>
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Middle Name</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="middleName"
-                                    className="input form-control "
-                                    id="middleName"
-                                    type="text"
-                                    placeholder="Enter middle name"
-                                />
+
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Secondary/ Class X / O Level</span>
+                                    <span className="label-text text-md">Equivalent Qualification Score</span>
+                                </div>
+                                <div className=" d-flex justify-content-center align-items-center">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="secondaryScore"
+                                        className="input form-control "
+                                        id="secondaryScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    /> <b>%</b>
+                                </div>
                             </div>
-                        </div>
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Last Name</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="lastName"
-                                    className="input form-control "
-                                    id="lastName"
-                                    type="text"
-                                    placeholder="Enter last name"
-                                />
+
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Higher Secondary/ Class XII / A Level / Equivalent Qualification Score</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="hscMarks" id="hscMarksYes" checked />
+                                            <label class="form-check-label" for="hscMarksYes">                                                Yes
+                                            </label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="hscMarks" id="hscMarksNo" />
+                                            <label class="form-check-label" for="hscMarksNo">
+                                                No
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="hscMarks" id="hscMarksAppeared" />
+                                            <label class="form-check-label" for="hscMarksAppeared">
+                                                appeared
+                                            </label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className=" d-flex justify-content-center align-items-center">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="secondaryScore"
+                                        className="input form-control "
+                                        id="secondaryScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    /> <b>%</b>
+                                </div>
                             </div>
-                        </div>
+
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Diploma Score</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="diplomaMarks" id="diplomaMarksYes" />
+                                            <label class="form-check-label" for="diplomaMarksYes">Yes</label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="diplomaMarks" id="diplomaMarksNo" checked />
+                                            <label class="form-check-label" for="diplomaMarksNo">No</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="diplomaMarks" id="diplomaMarksAppeared" />
+                                            <label class="form-check-label" for="diplomaMarksAppeared">appeared</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className=" d-flex justify-content-center align-items-center">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="diplomaScore"
+                                        className="input form-control "
+                                        id="diplomaScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    /> <b>%</b>
+                                </div>
+                            </div>
+
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Graduation Score</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="graduationMarks" id="graduationMarksYes" />
+                                            <label class="form-check-label" for="graduationMarksYes">Yes</label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="graduationMarks" id="graduationMarksNo" checked />
+                                            <label class="form-check-label" for="graduationMarksNo">No</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="graduationMarks" id="graduationMarksAppeared" />
+                                            <label class="form-check-label" for="graduationMarksAppeared">appeared</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className=" d-flex justify-content-center align-items-center">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="graduationScore"
+                                        className="input form-control "
+                                        id="graduationScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    /> <b>%</b>
+                                </div>
+                            </div>
+
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Post Graduation Score</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="postgraduationMarks" id="postgraduationMarksYes" />
+                                            <label class="form-check-label" for="postgraduationMarksYes">Yes</label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="postgraduationMarks" id="postgraduationMarksNo" checked />
+                                            <label class="form-check-label" for="postgraduationMarksNo">No</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="postgraduationMarks" id="postgraduationMarksAppeared" />
+                                            <label class="form-check-label" for="postgraduationMarksAppeared">appeared</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className=" d-flex justify-content-center align-items-center">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="postGraduationScore"
+                                        className="input form-control "
+                                        id="postGraduationScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    /> <b>%</b>
+                                </div>
+                            </div>
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">NEET Score</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="neetMarks" id="neetScoreYes" />
+                                            <label class="form-check-label" for="neetScoreYes">Yes</label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="neetMarks" id="neetScoreNo" checked />
+                                            <label class="form-check-label" for="neetScoreNo">No</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="neetMarks" id="neetScoreAppeared" />
+                                            <label class="form-check-label" for="neetScoreAppeared">appeared</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className=" d-flex justify-content-center align-items-center">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="neetScore"
+                                        className="input form-control "
+                                        id="neetScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    /> <b>%</b>
+                                </div>
+                            </div>
 
 
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Date of birth</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="dateOfBirth"
-                                    className="input form-control "
-                                    id="dateOfBirth"
-                                    type="date"
-                                />
-                            </div>
                         </div>
-                        <div className=" col-lg-4 col-md-6 mb-3">
+                    </div>
 
-                            <span className="label-text text-md fw-bold  ">
-                                Gender<span className="star">&#x2605;</span>
-                            </span>
-                            <select
-                                onChange={handleOnChange}
-                                name="gender"
-                                className="form-select  "
-                            >
-                                <option>-Plese Select-</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="others">Others</option>
-                            </select>
-
-                        </div>
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Phone</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="phoneMobile"
-                                    className="input form-control "
-                                    id="phoneMobile"
-                                    type="text"
-                                    placeholder="Enter phone/mobile"
-                                />
+                    <div className="personalInfo col-g-6 mx-1 my-lg-0 my-4">
+                        <div className="row   form-outline p-3">
+                            <div className=" d-flex justify-content-evenly">
+                                <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic my-3">Qualification</span>
+                                <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic my-3">Percentage</span>
                             </div>
-                        </div>
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Email</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="email"
-                                    className="input form-control "
-                                    id="email"
-                                    type="email"
-                                    placeholder="Enter email"
-                                // disabled
-                                />
+
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Do you have GRE score?</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="greMarks" id="greScoreYes" />
+                                            <label class="form-check-label" for="greScoreYes">Yes</label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="greMarks" id="greScoreNo" checked />
+                                            <label class="form-check-label" for="greScoreNo">No</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="greMarks" id="greScoreAppeared" />
+                                            <label class="form-check-label" for="greScoreAppeared">appeared</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="greScore"
+                                        className="input form-control "
+                                        id="greScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Do you have GMAT score?</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gmatMarks" id="gmatScoreYes" />
+                                            <label class="form-check-label" for="gmatScoreYes">Yes</label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="gmatMarks" id="gmatScoreNo" checked />
+                                            <label class="form-check-label" for="gmatScoreNo">No</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="gmatMarks" id="gmatScoreAppeared" />
+                                            <label class="form-check-label" for="gmatScoreAppeared">appeared</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="gmatScore"
+                                        className="input form-control "
+                                        id="gmatScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    />
+                                </div>
+                            </div>
+
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Do you have SAT Level 1 score?</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satOneMarks" id="satOneScoreYes" />
+                                            <label class="form-check-label" for="satOneScoreYes">Yes</label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="satOneMarks" id="satOneScoreNo" checked />
+                                            <label class="form-check-label" for="satOneScoreNo">No</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satOneMarks" id="satOneScoreAppeared" />
+                                            <label class="form-check-label" for="satOneScoreAppeared">appeared</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="satOneScore"
+                                        className="input form-control "
+                                        id="satOneScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    />
+                                </div>
+                            </div>
+
+
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Do you have SAT Level 2 score?</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satTwoMarks" id="satTwoScoreYes" />
+                                            <label class="form-check-label" for="satTwoScoreYes">Yes</label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="satTwoMarks" id="satTwoScoreNo" checked />
+                                            <label class="form-check-label" for="satTwoScoreNo">No</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="satTwoMarks" id="satTwoScoreAppeared" />
+                                            <label class="form-check-label" for="satTwoScoreAppeared">appeared</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="satTwoScore"
+                                        className="input form-control "
+                                        id="satTwoScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    />
+                                </div>
+                            </div>
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Do you have TOEFL score?</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="toffelMarks" id="toffelScoreYes" />
+                                            <label class="form-check-label" for="toffelScoreYes">Yes</label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="toffelMarks" id="toffelScoreNo" checked />
+                                            <label class="form-check-label" for="toffelScoreNo">No</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="toffelMarks" id="toffelScoreAppeared" />
+                                            <label class="form-check-label" for="toffelScoreAppeared">appeared</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="toffelScore"
+                                        className="input form-control "
+                                        id="toffelScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    />
+                                </div>
+                            </div>
+                            <div className="  mb-3 d-flex justify-content-between">
+                                <div className=" d-flex flex-column">
+                                    <span className="label-text text-md fw-bold">Do you have IELTS score?</span>
+                                    <div className=" d-flex">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="ieltsMarks" id="ieltsScoreYes" />
+                                            <label class="form-check-label" for="ieltsScoreYes">Yes</label>
+                                        </div>
+                                        <div class="form-check mx-4">
+                                            <input class="form-check-input" type="radio" name="ieltsMarks" id="ieltsScoreNo" checked />
+                                            <label class="form-check-label" for="ieltsScoreNo">No</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="ieltsMarks" id="ieltsScoreAppeared" />
+                                            <label class="form-check-label" for="ieltsScoreAppeared">appeared</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="">
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="ieltsScore"
+                                        className="input form-control "
+                                        id="ieltsScore"
+                                        type="number"
+                                        placeholder="Enter score"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
 
                 </div>
 
-                <div className=" my-md-4">
-                    <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic ">Present Address</span>
-                    <div className=" row   form-outline personalInfo">
-                        <div className="col-lg-6 mb-3">
-                            <span className="label-text text-md fw-bold">Address Line 1</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preAddressLineOne"
-                                    className="input form-control "
-                                    id="preAddressLineOne"
-                                    type="text"
-                                    placeholder="Enter address Line 1"
-                                />
-                            </div>
-                        </div>
-                        <div className="col-lg-6 mb-3">
-                            <span className="label-text text-md fw-bold">Address Line 2</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preAddressLineTwo"
-                                    className="input form-control "
-                                    id="preAddressLineTwo"
-                                    type="text"
-                                    placeholder="Enter address Line 2"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">City</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preCity"
-                                    className="input form-control "
-                                    id="preCity"
-                                    type="text"
-                                    placeholder="Enter city"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">State</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preState"
-                                    className="input form-control "
-                                    id="preState"
-                                    type="text"
-                                    placeholder="Enter state"
-                                />
-                            </div>
-                        </div>
 
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Zip</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preZip"
-                                    className="input form-control "
-                                    id="preZip"
-                                    type="text"
-                                    placeholder="Enter Zip"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Country</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preCountry"
-                                    className="input form-control "
-                                    id="preCountry"
-                                    type="text"
-                                    placeholder="Enter Country"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div className=" my-md-4">
-                    <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic ">Permanent Address</span>
-                    <div className=" row   form-outline personalInfo">
-                        <div className="col-lg-6 mb-3">
-                            <span className="label-text text-md fw-bold">Address Line 1</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perAddressLineOne"
-                                    className="input form-control "
-                                    id="perAddressLineOne"
-                                    type="text"
-                                    placeholder="Enter address Line 1"
-                                />
-                            </div>
-                        </div>
-                        <div className="col-lg-6 mb-3">
-                            <span className="label-text text-md fw-bold">Address Line 2</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perAddressLineTwo"
-                                    className="input form-control "
-                                    id="perAddressLineTwo"
-                                    type="text"
-                                    placeholder="Enter address Line 2"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">City</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perCity"
-                                    className="input form-control "
-                                    id="perCity"
-                                    type="text"
-                                    placeholder="Enter city"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">State</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perState"
-                                    className="input form-control "
-                                    id="perState"
-                                    type="text"
-                                    placeholder="Enter state"
-                                />
-                            </div>
-                        </div>
-
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Zip</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perZip"
-                                    className="input form-control "
-                                    id="perZip"
-                                    type="text"
-                                    placeholder="Enter Zip"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Country</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perCountry"
-                                    className="input form-control "
-                                    id="perCountry"
-                                    type="text"
-                                    placeholder="Enter Country"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className=" d-flex justify-content-between my-lg-5">
+                <div className=" d-flex justify-content-between my-3">
                     <button type="reset" className="btn btn-warning fw-bold">Reset</button>
                     <button type="submit" name="submit" className="btn btn-primary">Save</button>
                 </div>
@@ -317,4 +419,4 @@ const ApplyNow = () => {
     );
 };
 
-export default ApplyNow;
+export default BackgroundInfo;
