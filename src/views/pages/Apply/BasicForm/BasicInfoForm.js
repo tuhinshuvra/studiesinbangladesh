@@ -7,6 +7,35 @@ const BasicInfoForm = () => {
     const navigate = useNavigate();
     const [basicInfo, setBasicInfo] = useState([]);
 
+
+
+    const handlePermanentAddress = () => {
+        console.log("I am clicked");
+        let preAddressLineOne = document.getElementById("preAddressLineOne");
+        let preAddressLineTwo = document.getElementById("preAddressLineTwo");
+        let preCity = document.getElementById("preCity");
+        let preState = document.getElementById("preState");
+        let preZip = document.getElementById("preZip");
+        let preCountry = document.getElementById("preCountry");
+
+        let perAddressLineOne = document.getElementById("perAddressLineOne");
+        let perAddressLineTwo = document.getElementById("perAddressLineTwo");
+        let perCity = document.getElementById("perCity");
+        let perState = document.getElementById("perState");
+        let perZip = document.getElementById("perZip");
+        let perCountry = document.getElementById("perCountry");
+
+
+
+        perAddressLineOne.value = preAddressLineOne.value;
+        perAddressLineTwo.value = preAddressLineTwo.value;
+        perCity.value = preCity.value;
+        perState.value = preState.value;
+        perZip.value = preZip.value;
+        perCountry.value = preCountry.value;
+
+    };
+
     const handleOnChange = (event) => {
         const field = event.target.name;
         const value = event.target.value;
@@ -24,12 +53,9 @@ const BasicInfoForm = () => {
 
 
     return (
-        <div className="col-lg-8  col-md-10 mx-auto ">
-            <h2 className=" text-primary text-center fw-bold my-4">Enter Basic Information</h2>
-
-
+        <div className="col-lg-8  col-md-10 mx-auto">
+            <h2 className=" text-primary text-center fw-bold">Enter Basic Information</h2>
             <form onSubmit={handleOnSubmit} className="">
-
                 <div className="my-md-3">
                     <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic">Personal Information</span>
                     <div className="personalInfo">
@@ -72,6 +98,7 @@ const BasicInfoForm = () => {
                                         id="lastName"
                                         type="text"
                                         placeholder="Enter last name"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -85,6 +112,7 @@ const BasicInfoForm = () => {
                                         className="input form-control "
                                         id="dateOfBirth"
                                         type="date"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -96,7 +124,8 @@ const BasicInfoForm = () => {
                                 <select
                                     onChange={handleOnChange}
                                     name="gender"
-                                    className="form-select  "
+                                    className="form-select"
+                                    required
                                 >
                                     <option>-Plese Select-</option>
                                     <option value="male">Male</option>
@@ -115,6 +144,7 @@ const BasicInfoForm = () => {
                                         id="phoneMobile"
                                         type="text"
                                         placeholder="Enter phone/mobile"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -138,7 +168,7 @@ const BasicInfoForm = () => {
                 </div>
 
                 <div className=" my-md-4">
-                    <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic ">Present Address</span>
+                    <span className="fs-5 text-primary  label-text text-md fw-bold fst-italic">Present Address</span>
                     <div className="personalInfo">
                         <div className=" row   form-outline  p-3">
                             <div className="col-lg-6 mb-3">
@@ -155,7 +185,7 @@ const BasicInfoForm = () => {
                                 </div>
                             </div>
                             <div className="col-lg-6 mb-3">
-                                <span className="label-text text-md fw-bold">Address Line 2</span>
+                                <span className="label-text text-md fw-bold">Address Line 2(optional)</span>
                                 <div>
                                     <input
                                         onChange={handleOnChange}
@@ -177,11 +207,12 @@ const BasicInfoForm = () => {
                                         id="preCity"
                                         type="text"
                                         placeholder="Enter city"
+                                        required
                                     />
                                 </div>
                             </div>
                             <div className=" col-lg-3 col-md-6 mb-3">
-                                <span className="label-text text-md fw-bold">State</span>
+                                <span className="label-text text-md fw-bold">State(optional)</span>
                                 <div>
                                     <input
                                         onChange={handleOnChange}
@@ -195,7 +226,7 @@ const BasicInfoForm = () => {
                             </div>
 
                             <div className=" col-lg-3 col-md-6 mb-3">
-                                <span className="label-text text-md fw-bold">Zip</span>
+                                <span className="label-text text-md fw-bold">Zip(optional)</span>
                                 <div>
                                     <input
                                         onChange={handleOnChange}
@@ -217,6 +248,7 @@ const BasicInfoForm = () => {
                                         id="preCountry"
                                         type="text"
                                         placeholder="Enter Country"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -224,8 +256,19 @@ const BasicInfoForm = () => {
                     </div>
                 </div>
 
+
+
                 <div className=" my-md-4">
-                    <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic ">Permanent Address</span>
+
+                    <div className=" d-md-flex justify-content-between">
+                        <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic ">Permanent Address</span>
+                        <div class="form-check " onClick={handlePermanentAddress}>
+                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                            <label class="form-check-label fw-bold fst-italic" for="flexCheckDefault">
+                                Same as present address
+                            </label>
+                        </div>
+                    </div>
 
                     <div className="personalInfo">
                         <div className=" row   form-outline p-3 ">
@@ -239,11 +282,12 @@ const BasicInfoForm = () => {
                                         id="perAddressLineOne"
                                         type="text"
                                         placeholder="Enter address Line 1"
+                                        required
                                     />
                                 </div>
                             </div>
                             <div className="col-lg-6 mb-3">
-                                <span className="label-text text-md fw-bold">Address Line 2</span>
+                                <span className="label-text text-md fw-bold">Address Line 2(optional)</span>
                                 <div>
                                     <input
                                         onChange={handleOnChange}
@@ -265,11 +309,12 @@ const BasicInfoForm = () => {
                                         id="perCity"
                                         type="text"
                                         placeholder="Enter city"
+                                        required
                                     />
                                 </div>
                             </div>
                             <div className=" col-lg-3 col-md-6 mb-3">
-                                <span className="label-text text-md fw-bold">State</span>
+                                <span className="label-text text-md fw-bold">State(optional)</span>
                                 <div>
                                     <input
                                         onChange={handleOnChange}
@@ -283,7 +328,7 @@ const BasicInfoForm = () => {
                             </div>
 
                             <div className=" col-lg-3 col-md-6 mb-3">
-                                <span className="label-text text-md fw-bold">Zip</span>
+                                <span className="label-text text-md fw-bold">Zip(optional)</span>
                                 <div>
                                     <input
                                         onChange={handleOnChange}
@@ -305,6 +350,7 @@ const BasicInfoForm = () => {
                                         id="perCountry"
                                         type="text"
                                         placeholder="Enter Country"
+                                        required
                                     />
                                 </div>
                             </div>
@@ -312,7 +358,7 @@ const BasicInfoForm = () => {
                     </div>
                 </div>
 
-                <div className=" d-flex justify-content-between my-lg-5">
+                <div className=" d-flex justify-content-between my-lg-3">
                     <button type="reset" className="btn btn-warning fw-bold">Reset</button>
                     <button type="submit" name="submit" className="btn btn-primary">Save</button>
                 </div>

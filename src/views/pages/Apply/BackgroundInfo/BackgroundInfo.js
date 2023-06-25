@@ -4,132 +4,117 @@ import { useNavigate } from "react-router-dom";
 import "./BackgroundInfo.css";
 
 const BackgroundInfo = () => {
+    const [disabled, setDisabled] = useState(true);
     const navigate = useNavigate();
-    const [basicInfo, setBasicInfo] = useState([]);
+    const [passportInfo, setPassportInfo] = useState([]);
+
+    const toggleInput = () => {
+        setDisabled(!disabled);
+    };
 
     const handleOnChange = (event) => {
         const field = event.target.name;
         const value = event.target.value;
-        const newData = { ...basicInfo };
+        const newData = { ...passportInfo };
         newData[field] = value;
-        setBasicInfo(newData)
+        setPassportInfo(newData)
     }
-
 
     const handleOnSubmit = (event) => {
+
     }
 
-
-    console.log("basicInfo :", basicInfo);
+    console.log("basicInfo :", passportInfo);
 
 
     return (
-        <div className="col-lg-8  col-md-10 mx-auto ">
-            <h2 className=" text-primary text-center fw-bold my-4">Enter Basic Information</h2>
+        <div className="col-lg-8  col-md-10 mx-auto">
+            <h2 className=" text-primary text-center fw-bold">Enter Passport and reference Information</h2>
 
 
             <form onSubmit={handleOnSubmit} className="">
-                <div className=" d-flex justify-content-end my-0">
-                    <p className='   fw-bold'>Red Star (<span className="star">&#x2605; </span>)  denotes must be filled</p>
-                </div>
-                <div className=" my-md-3">
-                    <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic">Personal Information</span>
-                    <div className=" row   form-outline personalInfo">
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">First Name</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="firstName"
-                                    className="input form-control "
-                                    id="firstName"
-                                    type="text"
-                                    placeholder="Enter first name"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Middle Name</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="middleName"
-                                    className="input form-control "
-                                    id="middleName"
-                                    type="text"
-                                    placeholder="Enter middle name"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Last Name</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="lastName"
-                                    className="input form-control "
-                                    id="lastName"
-                                    type="text"
-                                    placeholder="Enter last name"
-                                />
-                            </div>
-                        </div>
+                <div className="my-md-3">
+                    <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic my-3">Passport Information</span>
 
+                    <div class="form-check my-3" onClick={toggleInput}>
+                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                        <label class="form-check-label fw-bold fst-italic" for="flexCheckDefault">
+                            I have passport
+                        </label>
+                    </div>
 
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Date of birth</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="dateOfBirth"
-                                    className="input form-control "
-                                    id="dateOfBirth"
-                                    type="date"
-                                />
+                    <div className="personalInfo">
+                        <div className="row   form-outline p-3">
+
+                            <div className="col-md-6 mb-3">
+                                <span className="label-text text-md fw-bold">Name as in Passport</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="nameInPassport"
+                                        className="input form-control "
+                                        id="nameInPassport"
+                                        type="text"
+                                        placeholder="Enter name as in passport"
+                                        disabled={disabled}
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className=" col-lg-4 col-md-6 mb-3">
-
-                            <span className="label-text text-md fw-bold  ">
-                                Gender<span className="star">&#x2605;</span>
-                            </span>
-                            <select
-                                onChange={handleOnChange}
-                                name="gender"
-                                className="form-select  "
-                            >
-                                <option>-Plese Select-</option>
-                                <option value="male">Male</option>
-                                <option value="female">Female</option>
-                                <option value="others">Others</option>
-                            </select>
-
-                        </div>
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Phone</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="phoneMobile"
-                                    className="input form-control "
-                                    id="phoneMobile"
-                                    type="text"
-                                    placeholder="Enter phone/mobile"
-                                />
+                            <div className="  col-md-6 mb-3">
+                                <span className="label-text text-md fw-bold">Passport Number</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="passportNumber"
+                                        className="input form-control "
+                                        id="passportNumber"
+                                        type="text"
+                                        placeholder="Enter passport number"
+                                        disabled={disabled}
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className=" col-lg-4 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Email</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="email"
-                                    className="input form-control "
-                                    id="email"
-                                    type="email"
-                                    placeholder="Enter email"
-                                // disabled
-                                />
+                            <div className=" col-lg-4 col-md-6 mb-3">
+                                <span className="label-text text-md fw-bold">Issuing Authority</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="IssuingAuthority"
+                                        className="input form-control "
+                                        id="IssuingAuthority"
+                                        type="text"
+                                        placeholder="Enter passport issuing authority"
+                                        disabled={disabled}
+                                    />
+                                </div>
+                            </div>
+
+                            <div className=" col-lg-4 col-md-6 mb-3">
+                                <span className="label-text text-md fw-bold">Passport Expiry Date</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="passExpiryDate"
+                                        className="input form-control "
+                                        id="passExpiryDate"
+                                        type="date"
+                                        disabled={disabled}
+                                    />
+                                </div>
+                            </div>
+                            <div className=" col-lg-4 col-md-6 mb-3">
+                                <span className="label-text text-md fw-bold">Issuing Country</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="passIssueCountry"
+                                        className="input form-control "
+                                        id="passIssueCountry"
+                                        type="text"
+                                        placeholder="Enter passport issuing country"
+                                        disabled={disabled}
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -137,176 +122,125 @@ const BackgroundInfo = () => {
                 </div>
 
                 <div className=" my-md-4">
-                    <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic ">Present Address</span>
-                    <div className=" row   form-outline personalInfo">
-                        <div className="col-lg-6 mb-3">
-                            <span className="label-text text-md fw-bold">Address Line 1</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preAddressLineOne"
-                                    className="input form-control "
-                                    id="preAddressLineOne"
-                                    type="text"
-                                    placeholder="Enter address Line 1"
-                                />
+                    <span className="fs-5 text-primary  label-text text-md fw-bold fst-italic">References</span>
+                    <div className="personalInfo">
+
+                        {/* reference one details */}
+                        <div className=" row   form-outline  p-3">
+                            <div className="col-lg-6 mb-3">
+                                <span className="label-text text-md fw-bold">Name</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="refOneName"
+                                        className="input form-control "
+                                        id="refOneName"
+                                        type="text"
+                                        placeholder="Enter refference name"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className="col-lg-6 mb-3">
-                            <span className="label-text text-md fw-bold">Address Line 2</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preAddressLineTwo"
-                                    className="input form-control "
-                                    id="preAddressLineTwo"
-                                    type="text"
-                                    placeholder="Enter address Line 2"
-                                />
+                            <div className="col-lg-6 mb-3">
+                                <span className="label-text text-md fw-bold">Email</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="refOneEmail"
+                                        className="input form-control "
+                                        id="refOneEmail"
+                                        type="text"
+                                        placeholder="Enter refference email"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">City</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preCity"
-                                    className="input form-control "
-                                    id="preCity"
-                                    type="text"
-                                    placeholder="Enter city"
-                                />
+                            <div className="col-lg-6 mb-3">
+                                <span className="label-text text-md fw-bold">Contact Number</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="refOneContact"
+                                        className="input form-control "
+                                        id="refOneContact"
+                                        type="text"
+                                        placeholder="Enter refference contact no"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">State</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preState"
-                                    className="input form-control "
-                                    id="preState"
-                                    type="text"
-                                    placeholder="Enter state"
-                                />
+                            <div className="col-lg-6 mb-3">
+                                <span className="label-text text-md fw-bold">Address</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="refOneAddress"
+                                        className="input form-control "
+                                        id="refOneAddress"
+                                        type="text"
+                                        placeholder="Enter refference address"
+                                    />
+                                </div>
                             </div>
                         </div>
 
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Zip</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preZip"
-                                    className="input form-control "
-                                    id="preZip"
-                                    type="text"
-                                    placeholder="Enter Zip"
-                                />
+                        {/* reference two details */}
+
+                        <div className=" row   form-outline  p-3">
+                            <div className="col-lg-6 mb-3">
+                                <span className="label-text text-md fw-bold">Name</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="refTwoName"
+                                        className="input form-control "
+                                        id="refTwoName"
+                                        type="text"
+                                        placeholder="Enter refference name"
+                                    />
+                                </div>
                             </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Country</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="preCountry"
-                                    className="input form-control "
-                                    id="preCountry"
-                                    type="text"
-                                    placeholder="Enter Country"
-                                />
+                            <div className="col-lg-6 mb-3">
+                                <span className="label-text text-md fw-bold">Email</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="refTwoEmail"
+                                        className="input form-control "
+                                        id="refTwoEmail"
+                                        type="text"
+                                        placeholder="Enter refference email"
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-lg-6 mb-3">
+                                <span className="label-text text-md fw-bold">Contact Number</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="refTwoContact"
+                                        className="input form-control"
+                                        id="refTwoContact"
+                                        type="text"
+                                        placeholder="Enter refference contact no"
+                                    />
+                                </div>
+                            </div>
+                            <div className="col-lg-6 mb-3">
+                                <span className="label-text text-md fw-bold">Address</span>
+                                <div>
+                                    <input
+                                        onChange={handleOnChange}
+                                        name="refTwoAddress"
+                                        className="input form-control "
+                                        id="refTwoAddress"
+                                        type="text"
+                                        placeholder="Enter refference address"
+                                    />
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className=" my-md-4">
-                    <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic ">Permanent Address</span>
-                    <div className=" row   form-outline personalInfo">
-                        <div className="col-lg-6 mb-3">
-                            <span className="label-text text-md fw-bold">Address Line 1</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perAddressLineOne"
-                                    className="input form-control "
-                                    id="perAddressLineOne"
-                                    type="text"
-                                    placeholder="Enter address Line 1"
-                                />
-                            </div>
-                        </div>
-                        <div className="col-lg-6 mb-3">
-                            <span className="label-text text-md fw-bold">Address Line 2</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perAddressLineTwo"
-                                    className="input form-control "
-                                    id="perAddressLineTwo"
-                                    type="text"
-                                    placeholder="Enter address Line 2"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">City</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perCity"
-                                    className="input form-control "
-                                    id="perCity"
-                                    type="text"
-                                    placeholder="Enter city"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">State</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perState"
-                                    className="input form-control "
-                                    id="perState"
-                                    type="text"
-                                    placeholder="Enter state"
-                                />
-                            </div>
-                        </div>
-
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Zip</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perZip"
-                                    className="input form-control "
-                                    id="perZip"
-                                    type="text"
-                                    placeholder="Enter Zip"
-                                />
-                            </div>
-                        </div>
-                        <div className=" col-lg-3 col-md-6 mb-3">
-                            <span className="label-text text-md fw-bold">Country</span>
-                            <div>
-                                <input
-                                    onChange={handleOnChange}
-                                    name="perCountry"
-                                    className="input form-control "
-                                    id="perCountry"
-                                    type="text"
-                                    placeholder="Enter Country"
-                                />
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <div className=" d-flex justify-content-between my-lg-5">
+                <div className=" d-flex justify-content-between my-lg-3">
                     <button type="reset" className="btn btn-warning fw-bold">Reset</button>
                     <button type="submit" name="submit" className="btn btn-primary">Save</button>
                 </div>
