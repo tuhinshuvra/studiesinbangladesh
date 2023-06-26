@@ -18,6 +18,7 @@ const BasicInfoForm = () => {
         let preZip = document.getElementById("preZip");
         let preCountry = document.getElementById("preCountry");
 
+
         let perAddressLineOne = document.getElementById("perAddressLineOne");
         let perAddressLineTwo = document.getElementById("perAddressLineTwo");
         let perCity = document.getElementById("perCity");
@@ -26,14 +27,12 @@ const BasicInfoForm = () => {
         let perCountry = document.getElementById("perCountry");
 
 
-
         perAddressLineOne.value = preAddressLineOne.value;
         perAddressLineTwo.value = preAddressLineTwo.value;
         perCity.value = preCity.value;
         perState.value = preState.value;
         perZip.value = preZip.value;
         perCountry.value = preCountry.value;
-
     };
 
     const handleOnChange = (event) => {
@@ -45,8 +44,7 @@ const BasicInfoForm = () => {
     }
 
 
-    const handleOnSubmit = (event) => {
-    }
+    const handleOnSubmit = (event) => { }
 
 
     console.log("basicInfo :", basicInfo);
@@ -54,9 +52,9 @@ const BasicInfoForm = () => {
 
     return (
         <div className="col-lg-8  col-md-10 mx-auto">
-            <div className=" d-flex justify-content-end mt-5">
+            <div className=" d-flex justify-content-end linkbtn">
                 <Link to="/passportInfo" className=" btn btn-primary btn-sm">Passport Info</Link>
-                <Link to="/applyNow" className=" btn btn-primary btn-sm ms-2">Academic Info</Link>
+                <Link to="/academicInfo" className=" btn btn-primary btn-sm ms-2">Academic Info</Link>
             </div>
             <h2 className=" text-primary text-center fw-bold">Enter Basic Information</h2>
             <form onSubmit={handleOnSubmit} className="">

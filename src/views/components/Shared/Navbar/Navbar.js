@@ -21,20 +21,20 @@ const Navbar = () => {
 
 
                             <li className="nav-item">
-                                <Link className="  mx-lg-3   navBtn mx-lg-4 mx-2 " to="/services">Services</Link>
+                                <Link className="navBtn mx-2 mx-lg-3" to="/services">Services</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="    navBtn me-lg-4 mx-2 " aria-current="page" to="/events">Events</Link>
+                                <Link className="navBtn mx-2 mx-lg-3" aria-current="page" to="/events">Events</Link>
                             </li>
 
                             <li className="nav-item">
-                                <Link className="    navBtn mx-lg-4 mx-2 mb-md-0 " to="/testimonial">Testimonials</Link>
+                                <Link className="navBtn mx-2 mx-lg-3 mb-md-0" to="/testimonial">Testimonials</Link>
                             </li>
 
                             <li>
                                 <Link to="/apply">
-                                    <button className='applyBtn ms-lg-3'>Apply</button>
+                                    <button className='applyBtn mx-2 mx-lg-3'>Apply</button>
                                 </Link>
                             </li>
                         </ul>

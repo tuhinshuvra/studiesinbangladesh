@@ -29,7 +29,7 @@ const AcademicInfo = () => {
 
     return (
         <div className="col-lg-12  col-md-9 mx-auto">
-            <div className=" d-flex justify-content-end mt-5">
+            <div className=" d-flex justify-content-end linkbtn">
                 <Link to="/passportInfo" className=" btn btn-primary btn-sm">Passport Info</Link>
                 <Link to="/basicInfo" className=" btn btn-primary btn-sm ms-2">Basic Info</Link>
             </div>
@@ -416,6 +416,7 @@ const AcademicInfo = () => {
 
                 <div className=" d-flex justify-content-between my-3">
                     <button type="reset" className="btn btn-warning fw-bold">Reset</button>
+                    <Link to="/disciplines" className=" btn btn-primary">Next</Link>
                     <button type="submit" name="submit" className="btn btn-primary">Save</button>
                 </div>
             </form>

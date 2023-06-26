@@ -27,7 +27,7 @@ const Footer = () => {
                             <h5 className='fw-bold text-center text-white'>Links</h5>
 
                             <ul className="nav flex-column ">
-                                <li className="mb-2 text-center"><Link to="/applyNow" className="  footer_btn fw-bold">Booking</Link></li>
+                                <li className="mb-2 text-center"><Link to="/academicInfo" className="  footer_btn fw-bold">Booking</Link></li>
                                 <li className="mb-2 text-center"><Link to="/services" className="  footer_btn fw-bold">Sevices</Link></li>
                                 <li className="mb-2 text-center"><Link to="/testimonial" className="  footer_btn fw-bold">Testimonial</Link></li>
                                 <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">FAQ</Link></li>
@@ -39,7 +39,7 @@ const Footer = () => {
                             <h5 className='fw-bold text-center text-white'>Links</h5>
 
                             <ul className="nav flex-column ">
-                                <li className="mb-2 text-center"><Link to="/applyNow" className="  footer_btn fw-bold">Booking</Link></li>
+                                <li className="mb-2 text-center"><Link to="/academicInfo" className="  footer_btn fw-bold">Booking</Link></li>
                                 <li className="mb-2 text-center"><Link to="/services" className="  footer_btn fw-bold">Sevices</Link></li>
                                 <li className="mb-2 text-center"><Link to="/testimonial" className="  footer_btn fw-bold">Testimonial</Link></li>
                                 <li className="mb-2 text-center"><Link to="/" className="  footer_btn fw-bold">FAQ</Link></li>

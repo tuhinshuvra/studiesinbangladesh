@@ -29,9 +29,9 @@ const PassportInfo = () => {
 
     return (
         <div className="col-lg-8  col-md-10 mx-auto">
-            <div className=" d-flex justify-content-end mt-5">
+            <div className=" d-flex justify-content-end linkbtn">
                 <Link to="/basicInfo" className=" btn btn-primary btn-sm">Basic Info</Link>
-                <Link to="/applyNow" className=" btn btn-primary btn-sm ms-2">Apply Now</Link>
+                <Link to="/academicInfo" className=" btn btn-primary btn-sm ms-2">Apply Now</Link>
             </div>
 
             <h2 className=" text-primary text-center fw-bold">Enter Passport and reference Information</h2>

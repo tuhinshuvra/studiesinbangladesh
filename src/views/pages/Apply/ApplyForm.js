@@ -11,8 +11,8 @@ const applyFormLogo = () => {
             <h2 className=' text-primary text-center mb-5 mt-4'>Complete three simple steps to enroll in any Bangladeshi institute</h2>
             <div className="row">
 
-                <div className="col-sm-4 mb-3 mb-sm-0">
-                    <div className="card">
+                <div className="col-md-4 col-10 mx-auto mb-3 mb-sm-0">
+                    <div className="card bg-info  ">
                         <div className="card-body">
                             <div className='text-center'>
                                 <BsFillPersonVcardFill className='applyFormLogo   text-primary my-3'></BsFillPersonVcardFill>
@@ -26,24 +26,24 @@ const applyFormLogo = () => {
                     </div>
                 </div>
 
-                <div className="col-sm-4 mb-3 mb-sm-0">
-                    <div className="card">
+                <div className="col-md-4 col-10 mx-auto mb-3 mb-sm-0">
+                    <div className="card bg-info">
 
                         <div className="card-body">
                             <div className='text-center'>
                                 <TbChartTreemap className='applyFormLogo   text-primary my-3'></TbChartTreemap>
                             </div>
-                            <h5 className="card-title text-primary fw-bold">Background information</h5>
+                            <h5 className="card-title text-primary fw-bold">Passport Information</h5>
                             <p className="card-text">Background information includes your passport information and references. In this form, you have to fill up your passport information. This is needed for the next process.</p>
                             <div className=' text-center'>
-                                <Link to="/passportInfo" className="btn btn-primary">Background Info</Link>
+                                <Link to="/passportInfo" className="btn btn-primary">Passport Info</Link>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div className="col-sm-4">
-                    <div className="card">
+                <div className="col-md-4 col-10 mx-auto">
+                    <div className="card bg-info">
                         <div className="card-body">
                             <div className='text-center'>
                                 <FaWpforms className='applyFormLogo   text-primary my-3'></FaWpforms>
@@ -51,7 +51,7 @@ const applyFormLogo = () => {
                             <h5 className="card-title text-primary fw-bold">Special title treatment</h5>
                             <p className="card-text">Fill in the basic and background info to enable this form. Have to make ready your academic certificates and exam documents. Your signature and pictures are also required.</p>
                             <div className=' text-center'>
-                                <Link to="/applyNow" className="btn btn-primary">Apply Now</Link>
+                                <Link to="/academicInfo" className="btn btn-primary">Apply Now</Link>
                             </div>
                         </div>
                     </div>

@@ -6,6 +6,8 @@ import BasicInfoForm from "../views/pages/Apply/BasicInfo/BasicInfoForm";
 import HomePageServicesSection from "../views/pages/Home/HomePageServicesSection/HomePageServicesSection";
 import HomePageTestimonialSection from "../views/pages/Home/HomePageTestimonialSection/HomePageTestimonialSection";
 import HomePageUpcommingEventsSection from "../views/pages/Home/HomePageUpcommingEventsSection/HomePageUpcommingEventsSection";
+import Disciplines from "../views/pages/Apply/Disciplines/Disciplines";
+import InstitutionChoice from "../views/pages/Apply/InstitutionChoice/InstitutionChoice";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: MainLayout } = require("../layout/MainLayout");
@@ -55,8 +57,16 @@ const router = createBrowserRouter([
                 element: <PassportInfo></PassportInfo>
             },
             {
-                path: "/applyNow",
+                path: "/academicInfo",
                 element: <AcademicInfo></AcademicInfo>
+            },
+            {
+                path: "/disciplines",
+                element: <Disciplines></Disciplines>
+            },
+            {
+                path: "/institutionChoice",
+                element: <InstitutionChoice></InstitutionChoice>
             },
 
             {
