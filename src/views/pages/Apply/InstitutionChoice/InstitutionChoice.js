@@ -35,7 +35,6 @@ const InstitutionChoice = () => {
             </div>
             <div className="">
                 <h2 className=" text-primary text-center fw-bold">Choices are not limited, select multiple institute to improve your choices.</h2>
-
             </div>
             <form onSubmit={handleOnSubmit} className="">
                 <div className=" d-lg-flex my-md-3">
@@ -43,6 +42,109 @@ const InstitutionChoice = () => {
                     <div className="personalInfo  col-md-11 mx-auto ">
                         <div className="row  form-outline p-3">
 
+                            <table class="table table-info table-striped-row table-hover text-center ">
+                                <thead>
+                                    <tr className=" text-center">
+                                        <th scope="col">Institute Name</th>
+                                        <th scope="col">Institute Type</th>
+                                        <th scope="col">Discipline</th>
+                                        <th scope="col">Program </th>
+                                        <th scope="col"> Course </th>
+                                        <th scope="col"> Specialization </th>
+                                        <th scope="col"> Eligibility </th>
+                                        <th scope="col"> Apply</th>
+                                    </tr>
+                                </thead>
+                                <tbody className="">
+                                    <tr>
+                                        <td>Anwer Khan Modern Medical College</td>
+                                        <td>Private</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>Under-Graduate</td>
+                                        <td>MBBS</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>NONE</td>
+                                        <td><button className=" btn btn-outline-primary">Apply </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anwer Khan Modern Medical College</td>
+                                        <td>Private</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>Under-Graduate</td>
+                                        <td>MBBS</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>NONE</td>
+                                        <td><button className=" btn btn-outline-primary">Apply </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anwer Khan Modern Medical College</td>
+                                        <td>Private</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>Under-Graduate</td>
+                                        <td>MBBS</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>NONE</td>
+                                        <td><button className=" btn btn-outline-primary">Apply </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anwer Khan Modern Medical College</td>
+                                        <td>Private</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>Under-Graduate</td>
+                                        <td>MBBS</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>NONE</td>
+                                        <td><button className=" btn btn-outline-primary">Apply </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anwer Khan Modern Medical College</td>
+                                        <td>Private</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>Under-Graduate</td>
+                                        <td>MBBS</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>NONE</td>
+                                        <td><button className=" btn btn-outline-primary">Apply </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anwer Khan Modern Medical College</td>
+                                        <td>Private</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>Under-Graduate</td>
+                                        <td>MBBS</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>NONE</td>
+                                        <td><button className=" btn btn-outline-primary">Apply </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anwer Khan Modern Medical College</td>
+                                        <td>Private</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>Under-Graduate</td>
+                                        <td>MBBS</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>NONE</td>
+                                        <td><button className=" btn btn-outline-primary">Apply </button></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Anwer Khan Modern Medical College</td>
+                                        <td>Private</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>Under-Graduate</td>
+                                        <td>MBBS</td>
+                                        <td>Medicine and Surgery</td>
+                                        <td>NONE</td>
+                                        <td><button className=" btn btn-outline-primary">Apply </button></td>
+                                    </tr>
+
+
+
+
+                                </tbody>
+                            </table>
+                            <div className="">
+                                <h2 className=" text-primary text-center fw-bold mt-3">Final Choices</h2>
+                            </div>
                             <table class="table table-info table-striped-row table-hover text-center ">
                                 <thead>
                                     <tr className=" text-center">
