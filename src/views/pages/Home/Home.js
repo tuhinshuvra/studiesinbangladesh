@@ -7,8 +7,10 @@ import HomePageCountriesSection from './HomePageCountriesSection/HomePageCountri
 import HomePageTestimonialSection from './HomePageTestimonialSection/HomePageTestimonialSection';
 import HomePageSubscription from './HomePageSubscription/HomePageSubscription';
 import './Home.css'
+import useTitle from '../../../hooks/useTitle';
 
 const Home = () => {
+    useTitle("Home")
     return (
         <div>
             <div className='vectorBg'>

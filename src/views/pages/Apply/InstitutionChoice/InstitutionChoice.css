@@ -47,3 +47,11 @@ legend:after {
     min-width: 20%;
     /* Fix this according to the white space to hide */
 }
+
+.trashBorder {
+    border: 1px solid red;
+    border-radius: 7px;
+    padding: 7px;
+    width: 32px;
+    height: 32px;
+}

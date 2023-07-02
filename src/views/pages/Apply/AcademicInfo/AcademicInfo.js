@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { toast } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import "./AcademicInfo.css";
+import useTitle from "../../../../hooks/useTitle";
 
 const AcademicInfo = () => {
+    useTitle("AcademicInfo")
     const [disabled, setDisabled] = useState(true);
     const navigate = useNavigate();
     const [passportInfo, setPassportInfo] = useState([]);
@@ -29,12 +31,12 @@ const AcademicInfo = () => {
 
     return (
         <div className="col-lg-12  col-md-9 mx-auto">
-            <div className=" d-flex justify-content-end linkbtn">
+            {/* <div className=" d-flex justify-content-end linkbtn">
                 <Link to="/passportInfo" className=" btn btn-primary btn-sm">Passport Info</Link>
                 <Link to="/basicInfo" className=" btn btn-primary btn-sm ms-2">Basic Info</Link>
-            </div>
+            </div> */}
             <div className="">
-                <h2 className=" text-primary text-center fw-bold">Enter Academic Information</h2>
+                <h2 className="commonFormHeading text-primary text-center fw-bold">Enter Academic Information</h2>
 
             </div>
             <form onSubmit={handleOnSubmit} className="">
@@ -416,7 +418,10 @@ const AcademicInfo = () => {
 
                 <div className=" d-flex justify-content-between my-3">
                     <button type="reset" className="btn btn-warning fw-bold">Reset</button>
-                    <Link to="/disciplines" className=" btn btn-primary">Next</Link>
+                    <div>
+                        <Link to="/apply" className="btn btn-info fw-bold mx-2">Main Form</Link>
+                        <Link to="/disciplines" className=" btn btn-info fw-bold">Next</Link>
+                    </div>
                     <button type="submit" name="submit" className="btn btn-primary">Save</button>
                 </div>
             </form>

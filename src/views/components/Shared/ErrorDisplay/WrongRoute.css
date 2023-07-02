@@ -1,3 +1,10 @@
+.text404 {
+    font-size: 150px;
+    font-weight: 900;
+    letter-spacing: -15px;
+
+}
+
 .error-page {
     display: flex;
     flex-direction: column;

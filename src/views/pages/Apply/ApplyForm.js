@@ -4,8 +4,10 @@ import { FaWpforms } from 'react-icons/fa';
 import { BsFillPersonVcardFill } from 'react-icons/bs';
 import { TbChartTreemap } from 'react-icons/tb';
 import './ApplyForm.css';
+import useTitle from '../../../hooks/useTitle';
 
 const applyFormLogo = () => {
+    // useTitle("Apply")
     return (
         <div className='applyFromArea col-lg-9    mx-auto my-5'>
             <h2 className=' text-primary text-center mb-5 mt-4'>Complete three simple steps to enroll in any Bangladeshi institute</h2>

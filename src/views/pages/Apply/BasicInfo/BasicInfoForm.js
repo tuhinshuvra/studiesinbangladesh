@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { toast } from "react-hot-toast";
 import { Link, useNavigate } from "react-router-dom";
 import "./BasicInfo.css";
+import useTitle from "../../../../hooks/useTitle";
 
 const BasicInfoForm = () => {
+    useTitle("BasicInfo")
     const navigate = useNavigate();
     const [basicInfo, setBasicInfo] = useState([]);
 
@@ -52,11 +54,11 @@ const BasicInfoForm = () => {
 
     return (
         <div className="col-lg-8  col-md-10 mx-auto">
-            <div className=" d-flex justify-content-end linkbtn">
-                <Link to="/passportInfo" className=" btn btn-primary btn-sm">Passport Info</Link>
-                <Link to="/academicInfo" className=" btn btn-primary btn-sm ms-2">Academic Info</Link>
-            </div>
-            <h2 className=" text-primary text-center fw-bold">Enter Basic Information</h2>
+            {/* <div className=" d-flex justify-content-end linkbtn">
+                    <Link to="/passportInfo" className=" btn btn-primary btn-sm">Passport Info</Link>
+                    <Link to="/academicInfo" className=" btn btn-primary btn-sm ms-2">Academic Info</Link>
+                </div> */}
+            <h2 className="commonFormHeading text-primary text-center fw-bold">Enter Basic Information</h2>
             <form onSubmit={handleOnSubmit} className="">
                 <div className="my-md-3">
                     <span className=" fs-5 text-primary  label-text text-md fw-bold fst-italic">Personal Information</span>
@@ -362,6 +364,7 @@ const BasicInfoForm = () => {
 
                 <div className=" d-flex justify-content-between my-lg-3">
                     <button type="reset" className="btn btn-warning fw-bold">Reset</button>
+                    <Link to="/apply" className="btn btn-info fw-bold">Main Form</Link>
                     <button type="submit" name="submit" className="btn btn-primary">Save</button>
                 </div>
             </form>
