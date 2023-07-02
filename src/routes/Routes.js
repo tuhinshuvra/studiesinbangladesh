@@ -8,6 +8,7 @@ import HomePageTestimonialSection from "../views/pages/Home/HomePageTestimonialS
 import HomePageUpcommingEventsSection from "../views/pages/Home/HomePageUpcommingEventsSection/HomePageUpcommingEventsSection";
 import Disciplines from "../views/pages/Apply/Disciplines/Disciplines";
 import InstitutionChoice from "../views/pages/Apply/InstitutionChoice/InstitutionChoice";
+import InstitutionChoosed from "../views/pages/Apply/InstitutionChoosed/InstitutionChoosed";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: MainLayout } = require("../layout/MainLayout");
@@ -67,6 +68,10 @@ const router = createBrowserRouter([
             {
                 path: "/institutionChoice",
                 element: <InstitutionChoice></InstitutionChoice>
+            },
+            {
+                path: "/choosedTopics",
+                element: <InstitutionChoosed></InstitutionChoosed>
             },
 
             {

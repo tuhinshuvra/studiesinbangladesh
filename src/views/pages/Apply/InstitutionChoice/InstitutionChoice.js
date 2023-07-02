@@ -310,7 +310,7 @@ const InstitutionChoice = () => {
                     <div>
                         <Link to="/disciplines" className=" btn btn-info fw-bold">Back</Link>
                         <Link to="/apply" className="btn btn-info fw-bold mx-2">Main Form</Link>
-                        <Link to="/next" className=" btn btn-info fw-bold">Next</Link>
+                        <Link to="/choosedTopics" className=" btn btn-info fw-bold">Next</Link>
                     </div>
 
                     <button type="submit" name="submit" className="btn btn-primary">Save</button>
