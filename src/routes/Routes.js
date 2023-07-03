@@ -9,6 +9,8 @@ import HomePageUpcommingEventsSection from "../views/pages/Home/HomePageUpcommin
 import Disciplines from "../views/pages/Apply/Disciplines/Disciplines";
 import InstitutionChoice from "../views/pages/Apply/InstitutionChoice/InstitutionChoice";
 import InstitutionChoosed from "../views/pages/Apply/InstitutionChoosed/InstitutionChoosed";
+import DocumentUpload from "../views/pages/Apply/DocumentUpload/DocumentUpload";
+import FinishApplication from "../views/pages/Apply/FinishApplication/FinishApplication";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: MainLayout } = require("../layout/MainLayout");
@@ -72,6 +74,14 @@ const router = createBrowserRouter([
             {
                 path: "/choosedTopics",
                 element: <InstitutionChoosed></InstitutionChoosed>
+            },
+            {
+                path: "/uploadDocument",
+                element: <DocumentUpload></DocumentUpload>
+            },
+            {
+                path: "/finishApplication",
+                element: <FinishApplication></FinishApplication>
             },
 
             {

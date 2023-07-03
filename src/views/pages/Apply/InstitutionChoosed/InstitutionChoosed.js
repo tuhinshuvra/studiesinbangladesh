@@ -6,7 +6,7 @@ import "./InstitutionChoosed.css";
 import useTitle from "../../../../hooks/useTitle";
 
 const InstitutionChoosed = () => {
-    useTitle("InstituteChoice")
+    useTitle("ChoosedInstitute")
     const [disabled, setDisabled] = useState(true);
     const navigate = useNavigate();
     const [passportInfo, setPassportInfo] = useState([]);
@@ -188,7 +188,7 @@ const InstitutionChoosed = () => {
                     <div>
                         <Link to="/institutionChoice" className=" btn btn-info fw-bold">Back</Link>
                         <Link to="/apply" className="btn btn-info fw-bold mx-2">Main Form</Link>
-                        <Link to="/next" className=" btn btn-info fw-bold">Next</Link>
+                        <Link to="/uploadDocument" className=" btn btn-info fw-bold">Next</Link>
                     </div>
 
                     <button type="submit" name="submit" className="btn btn-primary">Save</button>

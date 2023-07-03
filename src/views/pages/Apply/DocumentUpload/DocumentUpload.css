@@ -1,0 +1,57 @@
+fieldset {
+    border: 1px solid gray;
+}
+
+legend {
+    position: relative;
+    left: 50%;
+    /* Move the legend to the center of the fieldset's top border */
+
+    transform: translateX(-50%);
+    /* Fix the alignment to center perfectly */
+
+    background-color: white;
+    /* Put whatever color you want */
+
+    padding: 0.2em 0.5em;
+    color: gray;
+    font-size: 90%;
+    text-align: center;
+    position: relative;
+}
+
+legend:before {
+    position: absolute;
+    content: '';
+    height: 8px;
+    border-left: 1px solid gray;
+    left: 0px;
+    top: 7px;
+}
+
+legend:after {
+    position: absolute;
+    content: '';
+    height: 8px;
+    border-right: 1px solid gray;
+    right: 0px;
+    top: 7px;
+}
+
+#line {
+    position: absolute;
+    top: 19px;
+    /* Position the line */
+    left: 12px;
+    border-top: 1px solid gray;
+    min-width: 20%;
+    /* Fix this according to the white space to hide */
+}
+
+.trashBorder {
+    border: 1px solid red;
+    border-radius: 7px;
+    padding: 7px;
+    width: 32px;
+    height: 32px;
+}
