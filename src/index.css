@@ -42,7 +42,7 @@ code {
 }
 
 .applyBtn {
-  width: 130px;
+  width: 133px;
   height: 40px;
   border: none;
   font-weight: bold;
@@ -52,9 +52,6 @@ code {
 }
 
 .applyBtn:hover {
-  width: 130px;
-  height: 40px;
-  border: none;
   background: #9e0ca3;
   border-radius: 10px;
   color: white

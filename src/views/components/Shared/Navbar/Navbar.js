@@ -37,6 +37,12 @@ const Navbar = () => {
                                     <button className='applyBtn mx-2 mx-lg-3'>Apply</button>
                                 </Link>
                             </li>
+
+                            <li>
+                                <Link to="/appliedStudentList">
+                                    <button className='applyBtn mx-1'>AppliedStudents</button>
+                                </Link>
+                            </li>
                         </ul>
                     </div>
                 </div>
