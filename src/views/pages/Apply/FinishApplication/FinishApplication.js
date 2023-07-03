@@ -1,17 +1,23 @@
 import React, { useState } from "react";
 import { toast } from "react-hot-toast";
-import { Link, useNavigate } from "react-router-dom";
+import { Form, Link, useNavigate } from "react-router-dom";
 import "./FinishApplication.css";
 import useTitle from "../../../../hooks/useTitle";
 
 const FinishApplication = () => {
-    useTitle("DocumentsUpload")
+    useTitle("FinishAppliation")
     const [disabled, setDisabled] = useState(true);
     const navigate = useNavigate();
     const [passportInfo, setPassportInfo] = useState([]);
+    const [accepted, setAccepted] = useState(false);
 
     const toggleInput = () => {
         setDisabled(!disabled);
+    };
+
+
+    const handleTermsAndConditions = (event) => {
+        setAccepted(event.target.checked);
     };
 
     const handleOnChange = (event) => {
@@ -40,10 +46,15 @@ const FinishApplication = () => {
                 <div className="personalInfo ">
                     <div className="row  form-outline p-3">
 
-                        <div className=" d-flex justify-content-between fw-bold">
-                            <p>By submitting this application I agree to the
-                                <Link to="/" className=" text-decoration-none text-primary fst-italic ms-1 ">Terms and Conditions</Link>
-                            </p>
+
+                        <div className=" d-flex fw-bold">
+                            <p>By submitting this application I agree to the</p>
+                            <div className="form-check ms-2" onClick={handleTermsAndConditions}>
+                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault" />
+                                <label className="form-check-label" for="flexCheckDefault">
+                                    <Link to="/termsAndConditions" className=" text-decoration-none text-primary fst-italic">Terms and Conditions</Link>
+                                </label>
+                            </div>
                         </div>
 
 
@@ -91,7 +102,7 @@ const FinishApplication = () => {
                         <Link to="/next" className=" btn btn-info fw-bold">Next</Link>
                     </div>
 
-                    <button type="submit" name="submit" className="btn btn-primary">Submit</button>
+                    <button type="submit" name="submit" className="btn btn-primary" disabled={!accepted}>Submit</button>
                 </div>
             </form>
         </div>

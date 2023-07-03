@@ -11,6 +11,7 @@ import InstitutionChoice from "../views/pages/Apply/InstitutionChoice/Institutio
 import InstitutionChoosed from "../views/pages/Apply/InstitutionChoosed/InstitutionChoosed";
 import DocumentUpload from "../views/pages/Apply/DocumentUpload/DocumentUpload";
 import FinishApplication from "../views/pages/Apply/FinishApplication/FinishApplication";
+import TermsAndConditions from "../views/pages/TermsAndConditions";
 
 const { createBrowserRouter } = require("react-router-dom");
 const { default: MainLayout } = require("../layout/MainLayout");
@@ -82,6 +83,10 @@ const router = createBrowserRouter([
             {
                 path: "/finishApplication",
                 element: <FinishApplication></FinishApplication>
+            },
+            {
+                path: "/termsAndConditions",
+                element: <TermsAndConditions></TermsAndConditions>
             },
 
             {
