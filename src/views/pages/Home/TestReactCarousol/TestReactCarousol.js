@@ -1,4 +1,5 @@
-import React, { useReducer } from 'react';
+import React, { useRef } from 'react';
+import './TestReactCarousol.css';
 import { Rerousel } from 'rerousel';
 import CollegeOne from '../../../../assets/mediclaCollegeLogo/bangladeshMedicalCollege.png'
 import CollegeTwo from '../../../../assets/mediclaCollegeLogo/enamMedicalCollege.png'
@@ -9,13 +10,14 @@ import CollegeSix from '../../../../assets/mediclaCollegeLogo/popularMedicalColl
 import CollegeSeven from '../../../../assets/mediclaCollegeLogo/shahidSuhrawardyMedicalCollege.png'
 import CollegeEight from '../../../../assets/mediclaCollegeLogo/redcrecentMedicalCollege.jpg'
 import CollegeNine from '../../../../assets/mediclaCollegeLogo/usBanglaMedicalCollege.png'
-import './HomePageFeaturedUniversities.css';
 
-const HomePageFeaturedUniversities = () => {
-    const ref = useReducer(null);
+const TestReactCarousol = () => {
+
+    const ref = useRef(null);
+
+
     return (
-        <div className='featuredUniversity'>
-            <h2 className='common_Heading text-primary  text-center mb-md-5' data-aos="fade-up">Featured Universities</h2>
+        <div>
             <Rerousel itemRef={ref} interval={5000}>
                 <img src={CollegeOne} className='rerousel' alt="" ref={ref} />
                 <img src={CollegeTwo} className='rerousel' alt="" />
@@ -31,4 +33,4 @@ const HomePageFeaturedUniversities = () => {
     );
 };
 
-export default HomePageFeaturedUniversities;
+export default TestReactCarousol;

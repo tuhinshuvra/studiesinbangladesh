@@ -8,6 +8,7 @@ import HomePageTestimonialSection from './HomePageTestimonialSection/HomePageTes
 import HomePageSubscription from './HomePageSubscription/HomePageSubscription';
 import './Home.css'
 import useTitle from '../../../hooks/useTitle';
+import TestReactCarousol from './TestReactCarousol/TestReactCarousol';
 
 const Home = () => {
     useTitle("Home")
@@ -22,6 +23,7 @@ const Home = () => {
             <HomePageCountriesSection></HomePageCountriesSection>
             <HomePageTestimonialSection></HomePageTestimonialSection>
             <HomePageSubscription></HomePageSubscription>
+            <TestReactCarousol></TestReactCarousol>
         </div>
     );
 };
