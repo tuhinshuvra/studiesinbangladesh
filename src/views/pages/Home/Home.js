@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import HomePageHeroSection from './HomePageHeroSection/HomePageHeroSection';
 import HomePageFeaturedUniversities from './HomePageFeaturedUniversities/HomePageFeaturedUniversities';
 import HomePageServicesSection from './HomePageServicesSection/HomePageServicesSection';
@@ -6,9 +6,8 @@ import HomePageUpcommingEventsSection from './HomePageUpcommingEventsSection/Hom
 import HomePageCountriesSection from './HomePageCountriesSection/HomePageCountriesSection';
 import HomePageTestimonialSection from './HomePageTestimonialSection/HomePageTestimonialSection';
 import HomePageSubscription from './HomePageSubscription/HomePageSubscription';
-import './Home.css'
 import useTitle from '../../../hooks/useTitle';
-import TestReactCarousol from './TestReactCarousol/TestReactCarousol';
+import './Home.css'
 
 const Home = () => {
     useTitle("Home")
@@ -23,7 +22,6 @@ const Home = () => {
             <HomePageCountriesSection></HomePageCountriesSection>
             <HomePageTestimonialSection></HomePageTestimonialSection>
             <HomePageSubscription></HomePageSubscription>
-            <TestReactCarousol></TestReactCarousol>
         </div>
     );
 };
