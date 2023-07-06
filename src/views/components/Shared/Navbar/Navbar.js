@@ -30,11 +30,11 @@ const Navbar = () => {
                             </li>
 
                             <li>
-                                <Link to="/apply"><button className='applyBtn mx-2 mx-lg-3'>Apply</button></Link>
+                                <Link to="/apply"><button className='applyBtn mx-2 mx-lg-3 my-1 my-md-0'>Apply</button></Link>
                             </li>
 
                             <li>
-                                <Link to="/appliedStudentList"><button className='applyBtn mx-1'>AppliedStudents</button></Link>
+                                <Link to="/appliedStudentList"><button className='applyBtn me-md-0 me-2'>AppliedStudents</button></Link>
                             </li>
 
                         </ul>

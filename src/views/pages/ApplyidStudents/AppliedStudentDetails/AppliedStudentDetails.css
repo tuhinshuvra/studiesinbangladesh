@@ -1,0 +1,9 @@
+.studentDetails {
+    background-color: rgb(248, 227, 189);
+    padding-top: 1px;
+    padding-bottom: 10px;
+}
+
+.studentImage {
+    width: 160px;
+}
